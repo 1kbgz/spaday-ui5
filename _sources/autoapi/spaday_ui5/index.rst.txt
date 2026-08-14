@@ -1,0 +1,21 @@
+spaday_ui5
+==========
+
+.. py:module:: spaday_ui5
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   spaday_ui5.__version__
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+   :value: '0.1.0'
+
+
