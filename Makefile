@@ -27,6 +27,12 @@ build-js:
 
 build: build-js build-py  ## build the project
 
+.PHONY: catalog
+catalog:  ## regenerate the typed catalog from UI5's manifest
+	cd js; pnpm manifest
+	python -m spaday.cem spaday_ui5/custom-elements.json -o spaday_ui5/components.py
+	python -m ruff format spaday_ui5/components.py
+
 .PHONY: install
 install:  ## install python library
 	uv pip install .
