@@ -69,11 +69,5 @@ elements register once, and its `setTheme()` and icon imports reach these.
 Serving every module those packages export makes the tree large, and a page that loads the whole
 catalog makes several hundred module requests; serve it over HTTP/2 or with compression.
 
-## Development
-
-`make catalog` regenerates the typed classes from the installed UI5 package: it collects its manifest
-into `spaday_ui5/custom-elements.json` (`js/tools/manifest.mjs`) and generates
-`spaday_ui5/components.py` from it.
-
 > [!NOTE]
 > This library was generated using [copier](https://copier.readthedocs.io/en/stable/) from the [Base Python Project Template repository](https://github.com/python-project-templates/base).
