@@ -1,7 +1,7 @@
 /** Tolerate another bundle having already registered elements this bundle also registers.
  *
  * This bundle registers every UI5 element at import. An application that ships its own copy
- * of Fluent rather than importing this one registers the same tag names, and whichever copy
+ * of UI5 rather than importing this one registers the same tag names, and whichever copy
  * loads second would throw from `customElements.define` and die entirely, taking the whole catalog
  * with it. Importing this module FIRST makes `define` idempotent (skip names that already exist);
  * `restoreDefine()` puts the real one back immediately after the upstream imports, so the guard
