@@ -55,9 +55,15 @@ function filesUnder(dir) {
 /** Every script export of `name`: [specifier, file relative to the package] pairs. */
 function publicModules(name) {
   const root = path.resolve("node_modules", name);
-  const { exports: map = {} } = JSON.parse(
+  const pkg = JSON.parse(
     fs.readFileSync(path.join(root, "package.json"), "utf8"),
   );
+  // a package without "exports" exposes every file by its path, and its "module" or "main" under
+  // its bare name
+  const map = pkg.exports ?? {
+    ".": pkg.module ?? pkg.main ?? "index.js",
+    "./*": "./*",
+  };
   const modules = [];
   const prefixes = [];
   for (const [key, value] of Object.entries(map)) {

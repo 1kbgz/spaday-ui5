@@ -130,10 +130,25 @@ function resolve(decl, owner, missing) {
   for (const attr of out.attributes)
     attributes.set(attr.name, { ...attr, ...attributes.get(attr.name) });
   out.attributes = [...attributes.values()];
+  // Vaadin's analyzer points an array or object property at the attribute Polymer would derive for
+  // it, yet leaves that attribute out of `attributes`. Such a property -- a grid's `items` -- is a
+  // declared input set as a property only, so it is listed as the element's own field, not as the
+  // plumbing of whichever of the element's mixins declares it.
+  for (const member of out.members ?? []) {
+    if (!member.attribute || attributes.has(member.attribute)) continue;
+    delete member.attribute;
+    delete member.inheritedFrom;
+  }
   // the analyzer's expanded type (`'primary' | 'outline' | ...`) where the declared one is an alias
-  // (`ButtonAppearance`) that means nothing without the library's sources
+  // (`ButtonAppearance`) that means nothing without the library's sources, and without Closure's
+  // non-null marker (`!Array<!GridItem>`), which a TypeScript reading does not expect
   for (const entry of [...out.attributes, ...(out.members ?? [])]) {
     if (entry.parsedType?.text) entry.type = { text: entry.parsedType.text };
+    if (entry.type?.text?.includes("!"))
+      entry.type = {
+        ...entry.type,
+        text: entry.type.text.replace(/!(?=[\w(])/g, ""),
+      };
   }
   return out;
 }
