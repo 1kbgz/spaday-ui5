@@ -1,11 +1,14 @@
 # spaday-ui5
 
-Typed [UI5 Web Components](https://ui5.github.io/webcomponents/) and browser assets for spaday.
+Typed [UI5 Web Components](https://ui5.github.io/webcomponents/) and browser assets for [spaday](https://github.com/1kbgz/spaday).
 
 [![Build Status](https://github.com/1kbgz/spaday-ui5/actions/workflows/build.yaml/badge.svg?branch=main&event=push)](https://github.com/1kbgz/spaday-ui5/actions/workflows/build.yaml)
 [![codecov](https://codecov.io/gh/1kbgz/spaday-ui5/branch/main/graph/badge.svg)](https://codecov.io/gh/1kbgz/spaday-ui5)
 [![License](https://img.shields.io/github/license/1kbgz/spaday-ui5)](https://github.com/1kbgz/spaday-ui5)
 [![PyPI](https://img.shields.io/pypi/v/spaday-ui5.svg)](https://pypi.python.org/pypi/spaday-ui5)
+
+[![Preview of UI5 components in spaday rendering a procurement cockpit](https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp)](./spaday_ui5/example.py)
+
 
 ## Overview
 
