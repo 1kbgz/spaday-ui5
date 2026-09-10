@@ -52,6 +52,24 @@ test("publishes the UI5 version it serves", async ({ page }) => {
   );
 });
 
+test("a UI5 parameter set on the app drives the shell palette inside it", async ({
+  page,
+}) => {
+  // what `App().css(sapBrandColor=...)` renders
+  await page.goto("/dist/index.html");
+  expect(
+    await page.evaluate(() => {
+      const app = document.createElement("spa-app");
+      app.style.setProperty("--sapBrandColor", "rgb(255, 0, 0)");
+      const probe = document.createElement("div");
+      probe.style.color = "var(--spa-accent)";
+      app.append(probe);
+      document.body.append(app);
+      return getComputedStyle(probe).color;
+    }),
+  ).toBe("rgb(255, 0, 0)");
+});
+
 test("follows spaday's page mode on the root", async ({ page }) => {
   await page.goto("/dist/index.html");
   await page.waitForFunction(() => !!globalThis.__spadayUi5);

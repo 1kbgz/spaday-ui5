@@ -2,8 +2,10 @@
  * --spa-* token spaday and its component packages read is mapped onto the UI5 theme parameter that
  * owns it. Change the theme (setTheme, or spaday's wa-dark page mode) or restyle its parameters and
  * the shell, the graphs, the tables and the trees follow. UI5 themes the whole document at once, so
- * these follow the document's theme; a wa-dark island inside a light page stays light. */
-:root {
+ * these follow the document's theme; a wa-dark island inside a light page stays light. Declared on
+ * the spaday app too, so a parameter a `css()` call sets there drives the palette inside it. */
+:root,
+spa-app {
   --spa-surface: var(--sapBaseColor);
   --spa-surface-2: var(--sapBackgroundColor);
   --spa-border: var(--sapList_BorderColor);
