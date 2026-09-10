@@ -1,0 +1,16 @@
+/* UI5 is the design system, so it drives the shell palette rather than deferring to it: every
+ * --spa-* token spaday and its component packages read is mapped onto the UI5 theme parameter that
+ * owns it. Change the theme (setTheme, or spaday's wa-dark page mode) or restyle its parameters and
+ * the shell, the graphs, the tables and the trees follow. UI5 themes the whole document at once, so
+ * these follow the document's theme; a wa-dark island inside a light page stays light. */
+:root {
+  --spa-surface: var(--sapBaseColor);
+  --spa-surface-2: var(--sapBackgroundColor);
+  --spa-border: var(--sapList_BorderColor);
+  --spa-muted: var(--sapContent_LabelColor);
+  --spa-accent: var(--sapBrandColor);
+  --spa-info: var(--sapInformativeColor);
+  --spa-success: var(--sapPositiveColor);
+  --spa-warning: var(--sapCriticalColor);
+  --spa-danger: var(--sapNegativeColor);
+}
