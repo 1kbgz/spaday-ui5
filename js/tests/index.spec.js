@@ -92,3 +92,23 @@ test("follows spaday's page mode on the root", async ({ page }) => {
   );
   await expect.poll(() => token("--sapBaseColor")).toBe(light.ui5);
 });
+
+test("warns, naming what it serves, when another copy registered its elements first", async ({
+  page,
+}) => {
+  // the page keeps the first registration, so the loser says which elements are not its own
+  const warnings = [];
+  page.on("console", (message) => {
+    if (message.type() === "warning") warnings.push(message.text());
+  });
+  await page.addInitScript(() => {
+    customElements.define("ui5-button", class extends HTMLElement {});
+  });
+  await page.goto("/dist/index.html");
+  await expect
+    .poll(() => warnings.find((text) => text.includes("<ui5-button>")))
+    .toMatch(/ \d+\.\d+\.\d+\S*: another copy on the page already registered /);
+  expect(warnings.find((text) => text.includes("<ui5-button>"))).toContain(
+    "@ui5/webcomponents ",
+  );
+});
