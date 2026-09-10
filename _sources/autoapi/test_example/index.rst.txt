@@ -1,0 +1,39 @@
+test_example
+============
+
+.. py:module:: test_example
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   test_example.request
+   test_example.run_ticks
+   test_example.test_example_serves_the_cockpit
+   test_example.test_stream_moves_suppliers_and_brings_requisitions
+   test_example.test_submitting_a_requisition_queues_it_for_approval
+   test_example.test_approving_spends_budget_and_rejecting_does_not
+
+
+Module Contents
+---------------
+
+.. py:function:: request(method: str, path: str, **kwargs)
+   :async:
+
+
+.. py:function:: run_ticks(monkeypatch, ticks: int)
+
+   Run the procurement stream for ``ticks`` iterations.
+
+
+.. py:function:: test_example_serves_the_cockpit()
+
+.. py:function:: test_stream_moves_suppliers_and_brings_requisitions(monkeypatch)
+
+.. py:function:: test_submitting_a_requisition_queues_it_for_approval()
+
+.. py:function:: test_approving_spends_budget_and_rejecting_does_not()
+

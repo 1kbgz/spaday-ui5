@@ -11,6 +11,7 @@ Submodules
    :maxdepth: 1
 
    /autoapi/spaday_ui5/components/index
+   /autoapi/spaday_ui5/example/index
 
 
 Attributes

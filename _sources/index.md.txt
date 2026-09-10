@@ -36,6 +36,20 @@ Elements Manifest, so props, events and slots are checked when you author the tr
 `design` carry their choices. Installing the package does not inject assets; select it with
 `packages=["ui5"]` or pass the exported `package` descriptor.
 
+## Run the local example
+
+```bash
+python -m pip install -e ".[examples]"
+python -m spaday_ui5.example
+```
+
+Open `http://127.0.0.1:8026` for the [procurement cockpit](spaday_ui5/example.py): KPI cards with a
+progress indicator and rating fed live from Python, a list of requisitions streamed over transports and
+approved or rejected through Python endpoints with a toast, a supplier table whose cells update in place,
+a requisition form of input, select, step input, date picker, combo box, checkbox and text area two-way
+bound to spaday state and confirmed in a dialog, and a dark switch that moves UI5 and the spaday shell to
+`sap_horizon_dark` together.
+
 ## Theming
 
 The stylesheet maps spaday's `--spa-*` shell palette onto UI5's theme parameters, so a UI5 theme
