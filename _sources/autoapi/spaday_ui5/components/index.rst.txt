@@ -1,25 +1,7 @@
-spaday_ui5
-==========
+spaday_ui5.components
+=====================
 
-.. py:module:: spaday_ui5
-
-
-Submodules
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   /autoapi/spaday_ui5/components/index
-
-
-Attributes
-----------
-
-.. autoapisummary::
-
-   spaday_ui5.package
-   spaday_ui5.TOKENS
+.. py:module:: spaday_ui5.components
 
 
 Classes
@@ -27,135 +9,135 @@ Classes
 
 .. autoapisummary::
 
-   spaday_ui5.Ui5Avatar
-   spaday_ui5.Ui5AvatarBadge
-   spaday_ui5.Ui5AvatarGroup
-   spaday_ui5.Ui5Bar
-   spaday_ui5.Ui5Breadcrumbs
-   spaday_ui5.Ui5BreadcrumbsItem
-   spaday_ui5.Ui5BusyIndicator
-   spaday_ui5.Ui5Button
-   spaday_ui5.Ui5ButtonBadge
-   spaday_ui5.Ui5Calendar
-   spaday_ui5.Ui5CalendarLegend
-   spaday_ui5.Ui5CalendarLegendItem
-   spaday_ui5.Ui5Card
-   spaday_ui5.Ui5CardHeader
-   spaday_ui5.Ui5Carousel
-   spaday_ui5.Ui5CbItem
-   spaday_ui5.Ui5CbItemCustom
-   spaday_ui5.Ui5CbItemGroup
-   spaday_ui5.Ui5Checkbox
-   spaday_ui5.Ui5ColorPalette
-   spaday_ui5.Ui5ColorPaletteItem
-   spaday_ui5.Ui5ColorPalettePopover
-   spaday_ui5.Ui5ColorPicker
-   spaday_ui5.Ui5Combobox
-   spaday_ui5.Ui5Date
-   spaday_ui5.Ui5DatePicker
-   spaday_ui5.Ui5DateRange
-   spaday_ui5.Ui5DaterangePicker
-   spaday_ui5.Ui5DatetimeInput
-   spaday_ui5.Ui5DatetimePicker
-   spaday_ui5.Ui5Daypicker
-   spaday_ui5.Ui5Dialog
-   spaday_ui5.Ui5DropIndicator
-   spaday_ui5.Ui5DynamicDateRange
-   spaday_ui5.Ui5ExpandableText
-   spaday_ui5.Ui5FileUploader
-   spaday_ui5.Ui5Form
-   spaday_ui5.Ui5FormGroup
-   spaday_ui5.Ui5FormItem
-   spaday_ui5.Ui5Icon
-   spaday_ui5.Ui5Input
-   spaday_ui5.Ui5InputIcon
-   spaday_ui5.Ui5Label
-   spaday_ui5.Ui5Li
-   spaday_ui5.Ui5LiCustom
-   spaday_ui5.Ui5LiGroup
-   spaday_ui5.Ui5LiGroupHeader
-   spaday_ui5.Ui5LiSuggestionItem
-   spaday_ui5.Ui5Link
-   spaday_ui5.Ui5List
-   spaday_ui5.Ui5McbItem
-   spaday_ui5.Ui5McbItemCustom
-   spaday_ui5.Ui5McbItemGroup
-   spaday_ui5.Ui5Menu
-   spaday_ui5.Ui5MenuItem
-   spaday_ui5.Ui5MenuItemGroup
-   spaday_ui5.Ui5MenuSeparator
-   spaday_ui5.Ui5MessageStrip
-   spaday_ui5.Ui5Monthpicker
-   spaday_ui5.Ui5MultiCombobox
-   spaday_ui5.Ui5MultiInput
-   spaday_ui5.Ui5Option
-   spaday_ui5.Ui5OptionCustom
-   spaday_ui5.Ui5Panel
-   spaday_ui5.Ui5Popover
-   spaday_ui5.Ui5ProgressIndicator
-   spaday_ui5.Ui5RadioButton
-   spaday_ui5.Ui5RangeSlider
-   spaday_ui5.Ui5RatingIndicator
-   spaday_ui5.Ui5ResponsivePopover
-   spaday_ui5.Ui5SegmentedButton
-   spaday_ui5.Ui5SegmentedButtonItem
-   spaday_ui5.Ui5Select
-   spaday_ui5.Ui5Slider
-   spaday_ui5.Ui5SliderHandle
-   spaday_ui5.Ui5SliderTooltip
-   spaday_ui5.Ui5SpecialDate
-   spaday_ui5.Ui5SplitButton
-   spaday_ui5.Ui5StepInput
-   spaday_ui5.Ui5SuggestionItem
-   spaday_ui5.Ui5SuggestionItemCustom
-   spaday_ui5.Ui5SuggestionItemGroup
-   spaday_ui5.Ui5Switch
-   spaday_ui5.Ui5Tab
-   spaday_ui5.Ui5TabSeparator
-   spaday_ui5.Ui5Tabcontainer
-   spaday_ui5.Ui5Table
-   spaday_ui5.Ui5TableCell
-   spaday_ui5.Ui5TableGroupRow
-   spaday_ui5.Ui5TableGrowing
-   spaday_ui5.Ui5TableHeaderCell
-   spaday_ui5.Ui5TableHeaderCellActionAi
-   spaday_ui5.Ui5TableHeaderRow
-   spaday_ui5.Ui5TableRow
-   spaday_ui5.Ui5TableRowAction
-   spaday_ui5.Ui5TableRowActionNavigation
-   spaday_ui5.Ui5TableSelection
-   spaday_ui5.Ui5TableSelectionMulti
-   spaday_ui5.Ui5TableSelectionSingle
-   spaday_ui5.Ui5TableVirtualizer
-   spaday_ui5.Ui5Tag
-   spaday_ui5.Ui5Text
-   spaday_ui5.Ui5Textarea
-   spaday_ui5.Ui5TimePicker
-   spaday_ui5.Ui5TimePickerClock
-   spaday_ui5.Ui5TimeSelectionClocks
-   spaday_ui5.Ui5TimeSelectionInputs
-   spaday_ui5.Ui5Title
-   spaday_ui5.Ui5Toast
-   spaday_ui5.Ui5ToggleButton
-   spaday_ui5.Ui5ToggleSpinButton
-   spaday_ui5.Ui5Token
-   spaday_ui5.Ui5Tokenizer
-   spaday_ui5.Ui5Toolbar
-   spaday_ui5.Ui5ToolbarButton
-   spaday_ui5.Ui5ToolbarItem
-   spaday_ui5.Ui5ToolbarSelect
-   spaday_ui5.Ui5ToolbarSelectOption
-   spaday_ui5.Ui5ToolbarSeparator
-   spaday_ui5.Ui5ToolbarSpacer
-   spaday_ui5.Ui5Tree
-   spaday_ui5.Ui5TreeItem
-   spaday_ui5.Ui5TreeItemCustom
-   spaday_ui5.Ui5Yearpicker
-   spaday_ui5.Ui5Yearrangepicker
+   spaday_ui5.components.Ui5Avatar
+   spaday_ui5.components.Ui5AvatarBadge
+   spaday_ui5.components.Ui5AvatarGroup
+   spaday_ui5.components.Ui5Bar
+   spaday_ui5.components.Ui5Breadcrumbs
+   spaday_ui5.components.Ui5BreadcrumbsItem
+   spaday_ui5.components.Ui5BusyIndicator
+   spaday_ui5.components.Ui5Button
+   spaday_ui5.components.Ui5ButtonBadge
+   spaday_ui5.components.Ui5Calendar
+   spaday_ui5.components.Ui5Date
+   spaday_ui5.components.Ui5DateRange
+   spaday_ui5.components.Ui5CalendarLegend
+   spaday_ui5.components.Ui5CalendarLegendItem
+   spaday_ui5.components.Ui5Card
+   spaday_ui5.components.Ui5CardHeader
+   spaday_ui5.components.Ui5Carousel
+   spaday_ui5.components.Ui5Checkbox
+   spaday_ui5.components.Ui5ColorPalette
+   spaday_ui5.components.Ui5ColorPaletteItem
+   spaday_ui5.components.Ui5ColorPalettePopover
+   spaday_ui5.components.Ui5ColorPicker
+   spaday_ui5.components.Ui5Combobox
+   spaday_ui5.components.Ui5CbItem
+   spaday_ui5.components.Ui5CbItemCustom
+   spaday_ui5.components.Ui5CbItemGroup
+   spaday_ui5.components.Ui5DatePicker
+   spaday_ui5.components.Ui5DaterangePicker
+   spaday_ui5.components.Ui5DatetimeInput
+   spaday_ui5.components.Ui5DatetimePicker
+   spaday_ui5.components.Ui5Daypicker
+   spaday_ui5.components.Ui5Dialog
+   spaday_ui5.components.Ui5DropIndicator
+   spaday_ui5.components.Ui5DynamicDateRange
+   spaday_ui5.components.Ui5ExpandableText
+   spaday_ui5.components.Ui5FileUploader
+   spaday_ui5.components.Ui5Form
+   spaday_ui5.components.Ui5FormGroup
+   spaday_ui5.components.Ui5FormItem
+   spaday_ui5.components.Ui5Icon
+   spaday_ui5.components.Ui5Input
+   spaday_ui5.components.Ui5InputIcon
+   spaday_ui5.components.Ui5Label
+   spaday_ui5.components.Ui5Link
+   spaday_ui5.components.Ui5List
+   spaday_ui5.components.Ui5LiCustom
+   spaday_ui5.components.Ui5LiGroup
+   spaday_ui5.components.Ui5LiGroupHeader
+   spaday_ui5.components.Ui5Li
+   spaday_ui5.components.Ui5Menu
+   spaday_ui5.components.Ui5MenuItem
+   spaday_ui5.components.Ui5MenuItemGroup
+   spaday_ui5.components.Ui5MenuSeparator
+   spaday_ui5.components.Ui5MessageStrip
+   spaday_ui5.components.Ui5Monthpicker
+   spaday_ui5.components.Ui5MultiCombobox
+   spaday_ui5.components.Ui5McbItem
+   spaday_ui5.components.Ui5McbItemCustom
+   spaday_ui5.components.Ui5McbItemGroup
+   spaday_ui5.components.Ui5MultiInput
+   spaday_ui5.components.Ui5Option
+   spaday_ui5.components.Ui5OptionCustom
+   spaday_ui5.components.Ui5Panel
+   spaday_ui5.components.Ui5Popover
+   spaday_ui5.components.Ui5ProgressIndicator
+   spaday_ui5.components.Ui5RadioButton
+   spaday_ui5.components.Ui5RangeSlider
+   spaday_ui5.components.Ui5RatingIndicator
+   spaday_ui5.components.Ui5ResponsivePopover
+   spaday_ui5.components.Ui5SegmentedButton
+   spaday_ui5.components.Ui5SegmentedButtonItem
+   spaday_ui5.components.Ui5Select
+   spaday_ui5.components.Ui5Slider
+   spaday_ui5.components.Ui5SliderHandle
+   spaday_ui5.components.Ui5SliderTooltip
+   spaday_ui5.components.Ui5SpecialDate
+   spaday_ui5.components.Ui5SplitButton
+   spaday_ui5.components.Ui5StepInput
+   spaday_ui5.components.Ui5SuggestionItem
+   spaday_ui5.components.Ui5SuggestionItemCustom
+   spaday_ui5.components.Ui5SuggestionItemGroup
+   spaday_ui5.components.Ui5LiSuggestionItem
+   spaday_ui5.components.Ui5Switch
+   spaday_ui5.components.Ui5Tab
+   spaday_ui5.components.Ui5Tabcontainer
+   spaday_ui5.components.Ui5TabSeparator
+   spaday_ui5.components.Ui5Table
+   spaday_ui5.components.Ui5TableCell
+   spaday_ui5.components.Ui5TableGroupRow
+   spaday_ui5.components.Ui5TableGrowing
+   spaday_ui5.components.Ui5TableHeaderCell
+   spaday_ui5.components.Ui5TableHeaderCellActionAi
+   spaday_ui5.components.Ui5TableHeaderRow
+   spaday_ui5.components.Ui5TableRow
+   spaday_ui5.components.Ui5TableRowAction
+   spaday_ui5.components.Ui5TableRowActionNavigation
+   spaday_ui5.components.Ui5TableSelection
+   spaday_ui5.components.Ui5TableSelectionMulti
+   spaday_ui5.components.Ui5TableSelectionSingle
+   spaday_ui5.components.Ui5TableVirtualizer
+   spaday_ui5.components.Ui5Tag
+   spaday_ui5.components.Ui5Text
+   spaday_ui5.components.Ui5Textarea
+   spaday_ui5.components.Ui5TimePicker
+   spaday_ui5.components.Ui5TimePickerClock
+   spaday_ui5.components.Ui5TimeSelectionClocks
+   spaday_ui5.components.Ui5TimeSelectionInputs
+   spaday_ui5.components.Ui5Title
+   spaday_ui5.components.Ui5Toast
+   spaday_ui5.components.Ui5ToggleButton
+   spaday_ui5.components.Ui5ToggleSpinButton
+   spaday_ui5.components.Ui5Token
+   spaday_ui5.components.Ui5Tokenizer
+   spaday_ui5.components.Ui5Toolbar
+   spaday_ui5.components.Ui5ToolbarButton
+   spaday_ui5.components.Ui5ToolbarItem
+   spaday_ui5.components.Ui5ToolbarSelect
+   spaday_ui5.components.Ui5ToolbarSelectOption
+   spaday_ui5.components.Ui5ToolbarSeparator
+   spaday_ui5.components.Ui5ToolbarSpacer
+   spaday_ui5.components.Ui5Tree
+   spaday_ui5.components.Ui5TreeItem
+   spaday_ui5.components.Ui5TreeItemCustom
+   spaday_ui5.components.Ui5Yearpicker
+   spaday_ui5.components.Ui5Yearrangepicker
 
 
-Package Contents
-----------------
+Module Contents
+---------------
 
 .. py:class:: Ui5Avatar(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_name: str | None = None, color_scheme: Literal['Auto', 'Accent1', 'Accent2', 'Accent3', 'Accent4', 'Accent5', 'Accent6', 'Accent7', 'Accent8', 'Accent9', 'Accent10', 'Placeholder', 'Transparent'] | None = None, disabled: bool | None = None, fallback_icon: str | None = None, icon: str | None = None, initials: str | None = None, interactive: bool | None = None, mode: Literal['Image', 'Decorative', 'Interactive'] | None = None, shape: Literal['Circle', 'Square'] | None = None, size: Literal['XS', 'S', 'M', 'L', 'XL'] | None = None, **props: Any)
 
@@ -317,6 +299,38 @@ Package Contents
    .. py:attribute:: schema
 
 
+.. py:class:: Ui5Date(*children: spaday.component.Child, key: str | None = None, value: str | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   ### Overview The `ui5-date` component defines a calendar date to be used inside `ui5-calendar`
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-date'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5DateRange(*children: spaday.component.Child, key: str | None = None, end_value: str | None = None, start_value: str | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   ### Overview The `ui5-date-range` component defines a range of dates to be used inside `ui5-calendar`
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-date-range'
+
+
+
+   .. py:attribute:: schema
+
+
 .. py:class:: Ui5CalendarLegend(*children: spaday.component.Child, key: str | None = None, hide_non_working_day: bool | None = None, hide_selected_day: bool | None = None, hide_today: bool | None = None, hide_working_day: bool | None = None, **props: Any)
 
    Bases: :py:obj:`spaday.component.Component`
@@ -391,54 +405,6 @@ Package Contents
 
    .. py:attribute:: tag
       :value: 'ui5-carousel'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5CbItem(*children: spaday.component.Child, key: str | None = None, additional_text: str | None = None, text: str | None = None, value: str | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-cb-item` represents the item for a `ui5-combobox`.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-cb-item'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5CbItemCustom(*children: spaday.component.Child, key: str | None = None, text: str | None = None, value: str | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-cb-item-custom` is a combobox item component that allows placing custom content inside a combobox item. The `text` property is used for filtering and auto-complete. For highlighting functionality, see `@ui5/webcomponents-base/dist/util/generateHighlightedMarkup.js`.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-cb-item-custom'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5CbItemGroup(*children: spaday.component.Child, key: str | None = None, header_accessible_name: str | None = None, header_text: str | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-cb-group-item` is type of suggestion item, that can be used to split the `ui5-combobox` suggestions into groups.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-cb-item-group'
 
 
 
@@ -541,16 +507,48 @@ Package Contents
    .. py:attribute:: schema
 
 
-.. py:class:: Ui5Date(*children: spaday.component.Child, key: str | None = None, value: str | None = None, **props: Any)
+.. py:class:: Ui5CbItem(*children: spaday.component.Child, key: str | None = None, additional_text: str | None = None, text: str | None = None, value: str | None = None, **props: Any)
 
    Bases: :py:obj:`spaday.component.Component`
 
 
-   ### Overview The `ui5-date` component defines a calendar date to be used inside `ui5-calendar`
+   The `ui5-cb-item` represents the item for a `ui5-combobox`.
 
 
    .. py:attribute:: tag
-      :value: 'ui5-date'
+      :value: 'ui5-cb-item'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5CbItemCustom(*children: spaday.component.Child, key: str | None = None, text: str | None = None, value: str | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-cb-item-custom` is a combobox item component that allows placing custom content inside a combobox item. The `text` property is used for filtering and auto-complete. For highlighting functionality, see `@ui5/webcomponents-base/dist/util/generateHighlightedMarkup.js`.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-cb-item-custom'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5CbItemGroup(*children: spaday.component.Child, key: str | None = None, header_accessible_name: str | None = None, header_text: str | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-cb-group-item` is type of suggestion item, that can be used to split the `ui5-combobox` suggestions into groups.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-cb-item-group'
 
 
 
@@ -567,22 +565,6 @@ Package Contents
 
    .. py:attribute:: tag
       :value: 'ui5-date-picker'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5DateRange(*children: spaday.component.Child, key: str | None = None, end_value: str | None = None, start_value: str | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   ### Overview The `ui5-date-range` component defines a range of dates to be used inside `ui5-calendar`
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-date-range'
 
 
 
@@ -845,16 +827,32 @@ Package Contents
    .. py:attribute:: schema
 
 
-.. py:class:: Ui5Li(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_name: str | None = None, accessible_role: Literal['None', 'ListItem', 'MenuItem', 'TreeItem', 'Option'] | None = None, additional_text: str | None = None, additional_text_state: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, description: str | None = None, highlight: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, icon: str | None = None, icon_end: bool | None = None, movable: bool | None = None, navigated: bool | None = None, selected: bool | None = None, text: str | None = None, tooltip: str | None = None, type: Literal['Navigation', 'Inactive', 'InactiveSelectable', 'Active', 'Detail'] | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
+.. py:class:: Ui5Link(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_description: str | None = None, accessible_name: str | None = None, accessible_name_ref: str | None = None, accessible_role: Literal['Button', 'Link'] | None = None, design: Literal['Default', 'Emphasized', 'Subtle'] | None = None, disabled: bool | None = None, end_icon: str | None = None, href: str | None = None, icon: str | None = None, interactive_area_size: Literal['Normal', 'Large'] | None = None, target: str | None = None, tooltip: str | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
 
    Bases: :py:obj:`spaday.component.Component`
 
 
-   The `ui5-li` represents the simplest type of item for a `ui5-list`. This is a list item, providing the most common use cases such as `text`, `image` and `icon`.
+   ### Overview The `ui5-link` is a hyperlink component that is used to navigate to other apps and web pages, or to trigger actions. It is a clickable text element, visualized in such a way that it stands out from the standard text. On hover, it changes its style to an underlined text to provide additional feedback to the user. ### Usage You can set the `ui5-link` to be enabled or disabled. To create a visual hierarchy in large lists of links, you can set the less important links as `Subtle` or the more important ones as `Emphasized`, by using the `design` property. If the `href` property is set, the link behaves as the HTML anchor tag (`<a></a>`) and opens the specified URL in the given target frame (`target` property). To specify where the linked content is opened, you can use the `target` property. ### Responsive behavior If there is not enough space, the text of the `ui5-link` becomes truncated. If the `wrappingType` property is set to `"Normal"`, the text is displayed on several lines instead of being truncated. ### ES6 Module Import `import "@ui5/webcomponents/dist/Link";`
 
 
    .. py:attribute:: tag
-      :value: 'ui5-li'
+      :value: 'ui5-link'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5List(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_description: str | None = None, accessible_description_ref: str | None = None, accessible_name: str | None = None, accessible_name_ref: str | None = None, accessible_role: Literal['List', 'Menu', 'Tree', 'ListBox'] | None = None, footer_text: str | None = None, growing: Literal['None', 'Button', 'Scroll'] | None = None, growing_button_text: str | None = None, header_text: str | None = None, indent: bool | None = None, list_items: Any = None, loading: bool | None = None, loading_delay: float | None = None, no_data_text: str | None = None, selection_mode: Literal['None', 'Single', 'Multiple', 'SingleStart', 'SingleEnd', 'SingleAuto', 'Delete'] | None = None, separators: Literal['None', 'All', 'Inner'] | None = None, sticky_header: bool | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   ### Overview The `ui5-list` component allows displaying a list of items, advanced keyboard handling support for navigating between items, and predefined modes to improve the development efficiency. The `ui5-list` is a container for the available list items: - `ui5-li` - `ui5-li-custom` - `ui5-li-group` To benefit from the built-in selection mechanism, you can use the available selection modes, such as `Single`, `Multiple` and `Delete`. Additionally, the `ui5-list` provides header, footer, and customization for the list item separators. ### Keyboard Handling The `ui5-list` follows the SAP Fiori "Intentional Edit Pattern" (forms-editing variant) and exposes two interaction modes: - **Navigation mode** (default) - Arrow keys move focus between items; [Tab] leaves the list. - **Edit mode** (toggled by [F2] or [F7]) - [Tab] walks through the interactive elements inside items (buttons, links, inputs, checkboxes, etc.) and continues into the next item. #### Basic Navigation The `ui5-list` provides advanced keyboard handling for navigation between items. When an item is focused the user can use the following keyboard shortcuts: - [Up] or [Down] - Navigates up and down the items - [Home] - Navigates to first item - [End] - Navigates to the last item - [Tab] or [Shift] + [Tab] - Moves focus out of the list, to the next/previous control in the tab chain The user can use the following keyboard shortcuts to perform actions (such as select, delete), when the `selectionMode` property is in use: - [Space] - Select an item (if `type` is 'Active') when `selectionMode` is selection - [Delete] - Delete an item if `selectionMode` property is `Delete` #### Edit Mode - Reaching Interactive Elements Inside Items Interactive elements inside a list item (buttons, links, inputs, etc.) are not reached by [Tab] from navigation mode. To activate them, the user first enters edit mode. - [F2] - While focus is on an item, moves focus to the first interactive element inside it. While focus is on an interactive element, moves focus back to the item level. Unlike [F7], [F2] does not remember the previous position — it always lands on the first interactive element. - [F7] - While focus is on an item, moves focus to the last remembered internal element (or to the first interactive element if none is remembered). While focus is on an interactive element, saves its position and moves focus back to the item level. - [Tab] or [Shift] + [Tab] - While in edit mode, moves focus through the interactive elements within an item, then continues into the next/previous item's interactive elements, and exits the list after the last/first element. - [Up] or [Down] - While focus is on an interactive element inside an item, moves focus to the element at the same index in the previous/next item. Items with no interactive elements are skipped, and boundaries of `ui5-li-group` are crossed. **Note:** In `selectionMode="Delete"`, the per-item delete button is reachable through the edit-mode [Tab] flow described above, in addition to the [Delete] shortcut. #### Fast Navigation This component provides a build in fast navigation group which can be used via [F6] / [Shift] + [F6] / [Ctrl] + [Alt/Option] / [Down] or [Ctrl] + [Alt/Option] + [Up]. In order to use this functionality, you need to import the following module: `import "@ui5/webcomponents-base/dist/features/F6Navigation.js"` ### ES6 Module Import `import "@ui5/webcomponents/dist/List.js";` `import "@ui5/webcomponents/dist/ListItemStandard.js";` (for `ui5-li`) `import "@ui5/webcomponents/dist/ListItemCustom.js";` (for `ui5-li-custom`) `import "@ui5/webcomponents/dist/ListItemGroup.js";` (for `ui5-li-group`)
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-list'
 
 
 
@@ -909,96 +907,16 @@ Package Contents
    .. py:attribute:: schema
 
 
-.. py:class:: Ui5LiSuggestionItem(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_name: str | None = None, accessible_role: Literal['None', 'ListItem', 'MenuItem', 'TreeItem', 'Option'] | None = None, additional_text: str | None = None, additional_text_state: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, description: str | None = None, highlight: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, icon: str | None = None, icon_end: bool | None = None, movable: bool | None = None, navigated: bool | None = None, selected: bool | None = None, text: str | None = None, tooltip: str | None = None, type: Literal['Navigation', 'Inactive', 'InactiveSelectable', 'Active', 'Detail'] | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
+.. py:class:: Ui5Li(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_name: str | None = None, accessible_role: Literal['None', 'ListItem', 'MenuItem', 'TreeItem', 'Option'] | None = None, additional_text: str | None = None, additional_text_state: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, description: str | None = None, highlight: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, icon: str | None = None, icon_end: bool | None = None, movable: bool | None = None, navigated: bool | None = None, selected: bool | None = None, text: str | None = None, tooltip: str | None = None, type: Literal['Navigation', 'Inactive', 'InactiveSelectable', 'Active', 'Detail'] | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
 
    Bases: :py:obj:`spaday.component.Component`
 
 
-   The `ui5-li-suggestion-item` represents the suggestion item in the `ui5-input` suggestion popover.
+   The `ui5-li` represents the simplest type of item for a `ui5-list`. This is a list item, providing the most common use cases such as `text`, `image` and `icon`.
 
 
    .. py:attribute:: tag
-      :value: 'ui5-li-suggestion-item'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5Link(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_description: str | None = None, accessible_name: str | None = None, accessible_name_ref: str | None = None, accessible_role: Literal['Button', 'Link'] | None = None, design: Literal['Default', 'Emphasized', 'Subtle'] | None = None, disabled: bool | None = None, end_icon: str | None = None, href: str | None = None, icon: str | None = None, interactive_area_size: Literal['Normal', 'Large'] | None = None, target: str | None = None, tooltip: str | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   ### Overview The `ui5-link` is a hyperlink component that is used to navigate to other apps and web pages, or to trigger actions. It is a clickable text element, visualized in such a way that it stands out from the standard text. On hover, it changes its style to an underlined text to provide additional feedback to the user. ### Usage You can set the `ui5-link` to be enabled or disabled. To create a visual hierarchy in large lists of links, you can set the less important links as `Subtle` or the more important ones as `Emphasized`, by using the `design` property. If the `href` property is set, the link behaves as the HTML anchor tag (`<a></a>`) and opens the specified URL in the given target frame (`target` property). To specify where the linked content is opened, you can use the `target` property. ### Responsive behavior If there is not enough space, the text of the `ui5-link` becomes truncated. If the `wrappingType` property is set to `"Normal"`, the text is displayed on several lines instead of being truncated. ### ES6 Module Import `import "@ui5/webcomponents/dist/Link";`
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-link'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5List(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_description: str | None = None, accessible_description_ref: str | None = None, accessible_name: str | None = None, accessible_name_ref: str | None = None, accessible_role: Literal['List', 'Menu', 'Tree', 'ListBox'] | None = None, footer_text: str | None = None, growing: Literal['None', 'Button', 'Scroll'] | None = None, growing_button_text: str | None = None, header_text: str | None = None, indent: bool | None = None, list_items: Any = None, loading: bool | None = None, loading_delay: float | None = None, no_data_text: str | None = None, selection_mode: Literal['None', 'Single', 'Multiple', 'SingleStart', 'SingleEnd', 'SingleAuto', 'Delete'] | None = None, separators: Literal['None', 'All', 'Inner'] | None = None, sticky_header: bool | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   ### Overview The `ui5-list` component allows displaying a list of items, advanced keyboard handling support for navigating between items, and predefined modes to improve the development efficiency. The `ui5-list` is a container for the available list items: - `ui5-li` - `ui5-li-custom` - `ui5-li-group` To benefit from the built-in selection mechanism, you can use the available selection modes, such as `Single`, `Multiple` and `Delete`. Additionally, the `ui5-list` provides header, footer, and customization for the list item separators. ### Keyboard Handling The `ui5-list` follows the SAP Fiori "Intentional Edit Pattern" (forms-editing variant) and exposes two interaction modes: - **Navigation mode** (default) - Arrow keys move focus between items; [Tab] leaves the list. - **Edit mode** (toggled by [F2] or [F7]) - [Tab] walks through the interactive elements inside items (buttons, links, inputs, checkboxes, etc.) and continues into the next item. #### Basic Navigation The `ui5-list` provides advanced keyboard handling for navigation between items. When an item is focused the user can use the following keyboard shortcuts: - [Up] or [Down] - Navigates up and down the items - [Home] - Navigates to first item - [End] - Navigates to the last item - [Tab] or [Shift] + [Tab] - Moves focus out of the list, to the next/previous control in the tab chain The user can use the following keyboard shortcuts to perform actions (such as select, delete), when the `selectionMode` property is in use: - [Space] - Select an item (if `type` is 'Active') when `selectionMode` is selection - [Delete] - Delete an item if `selectionMode` property is `Delete` #### Edit Mode - Reaching Interactive Elements Inside Items Interactive elements inside a list item (buttons, links, inputs, etc.) are not reached by [Tab] from navigation mode. To activate them, the user first enters edit mode. - [F2] - While focus is on an item, moves focus to the first interactive element inside it. While focus is on an interactive element, moves focus back to the item level. Unlike [F7], [F2] does not remember the previous position — it always lands on the first interactive element. - [F7] - While focus is on an item, moves focus to the last remembered internal element (or to the first interactive element if none is remembered). While focus is on an interactive element, saves its position and moves focus back to the item level. - [Tab] or [Shift] + [Tab] - While in edit mode, moves focus through the interactive elements within an item, then continues into the next/previous item's interactive elements, and exits the list after the last/first element. - [Up] or [Down] - While focus is on an interactive element inside an item, moves focus to the element at the same index in the previous/next item. Items with no interactive elements are skipped, and boundaries of `ui5-li-group` are crossed. **Note:** In `selectionMode="Delete"`, the per-item delete button is reachable through the edit-mode [Tab] flow described above, in addition to the [Delete] shortcut. #### Fast Navigation This component provides a build in fast navigation group which can be used via [F6] / [Shift] + [F6] / [Ctrl] + [Alt/Option] / [Down] or [Ctrl] + [Alt/Option] + [Up]. In order to use this functionality, you need to import the following module: `import "@ui5/webcomponents-base/dist/features/F6Navigation.js"` ### ES6 Module Import `import "@ui5/webcomponents/dist/List.js";` `import "@ui5/webcomponents/dist/ListItemStandard.js";` (for `ui5-li`) `import "@ui5/webcomponents/dist/ListItemCustom.js";` (for `ui5-li-custom`) `import "@ui5/webcomponents/dist/ListItemGroup.js";` (for `ui5-li-group`)
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-list'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5McbItem(*children: spaday.component.Child, key: str | None = None, additional_text: str | None = None, selected: bool | None = None, text: str | None = None, value: str | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-mcb-item` represents the item for a `ui5-multi-combobox`.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-mcb-item'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5McbItemCustom(*children: spaday.component.Child, key: str | None = None, text: str | None = None, value: str | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-mcb-item-custom` is a multi-combobox item component that allows placing custom content inside a multi-combobox item. The `text` property is used for filtering and token display. For highlighting functionality, see `@ui5/webcomponents-base/dist/util/generateHighlightedMarkup.js`.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-mcb-item-custom'
-
-
-
-   .. py:attribute:: schema
-
-
-.. py:class:: Ui5McbItemGroup(*children: spaday.component.Child, key: str | None = None, header_accessible_name: str | None = None, header_text: str | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-mcb-item-group` is type of suggestion item, that can be used to split the `ui5-multi-combobox` suggestions into groups.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-mcb-item-group'
+      :value: 'ui5-li'
 
 
 
@@ -1111,6 +1029,54 @@ Package Contents
 
    .. py:attribute:: tag
       :value: 'ui5-multi-combobox'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5McbItem(*children: spaday.component.Child, key: str | None = None, additional_text: str | None = None, selected: bool | None = None, text: str | None = None, value: str | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-mcb-item` represents the item for a `ui5-multi-combobox`.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-mcb-item'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5McbItemCustom(*children: spaday.component.Child, key: str | None = None, text: str | None = None, value: str | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-mcb-item-custom` is a multi-combobox item component that allows placing custom content inside a multi-combobox item. The `text` property is used for filtering and token display. For highlighting functionality, see `@ui5/webcomponents-base/dist/util/generateHighlightedMarkup.js`.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-mcb-item-custom'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5McbItemGroup(*children: spaday.component.Child, key: str | None = None, header_accessible_name: str | None = None, header_text: str | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-mcb-item-group` is type of suggestion item, that can be used to split the `ui5-multi-combobox` suggestions into groups.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-mcb-item-group'
 
 
 
@@ -1469,6 +1435,22 @@ Package Contents
    .. py:attribute:: schema
 
 
+.. py:class:: Ui5LiSuggestionItem(*children: spaday.component.Child, key: str | None = None, accessibility_attributes: Any = None, accessible_name: str | None = None, accessible_role: Literal['None', 'ListItem', 'MenuItem', 'TreeItem', 'Option'] | None = None, additional_text: str | None = None, additional_text_state: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, description: str | None = None, highlight: Literal['None', 'Positive', 'Critical', 'Negative', 'Information'] | None = None, icon: str | None = None, icon_end: bool | None = None, movable: bool | None = None, navigated: bool | None = None, selected: bool | None = None, text: str | None = None, tooltip: str | None = None, type: Literal['Navigation', 'Inactive', 'InactiveSelectable', 'Active', 'Detail'] | None = None, wrapping_type: Literal['None', 'Normal'] | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-li-suggestion-item` represents the suggestion item in the `ui5-input` suggestion popover.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-li-suggestion-item'
+
+
+
+   .. py:attribute:: schema
+
+
 .. py:class:: Ui5Switch(*children: spaday.component.Child, key: str | None = None, accessible_name: str | None = None, accessible_name_ref: str | None = None, checked: bool | None = None, design: Literal['Textual', 'Graphical'] | None = None, disabled: bool | None = None, name: str | None = None, readonly: bool | None = None, required: bool | None = None, text_off: str | None = None, text_on: str | None = None, tooltip: str | None = None, value: str | None = None, **props: Any)
 
    Bases: :py:obj:`spaday.component.Component`
@@ -1501,22 +1483,6 @@ Package Contents
    .. py:attribute:: schema
 
 
-.. py:class:: Ui5TabSeparator(*children: spaday.component.Child, key: str | None = None, **props: Any)
-
-   Bases: :py:obj:`spaday.component.Component`
-
-
-   The `ui5-tab-separator` represents a vertical line to separate tabs inside a `ui5-tabcontainer`.
-
-
-   .. py:attribute:: tag
-      :value: 'ui5-tab-separator'
-
-
-
-   .. py:attribute:: schema
-
-
 .. py:class:: Ui5Tabcontainer(*children: spaday.component.Child, key: str | None = None, all_items: Any = None, collapsed: bool | None = None, content_background_design: Literal['Transparent', 'Solid', 'Translucent'] | None = None, header_background_design: Literal['Transparent', 'Solid', 'Translucent'] | None = None, no_auto_selection: bool | None = None, overflow_mode: Literal['End', 'StartAndEnd'] | None = None, tab_layout: Literal['Standard', 'Inline'] | None = None, **props: Any)
 
    Bases: :py:obj:`spaday.component.Component`
@@ -1527,6 +1493,22 @@ Package Contents
 
    .. py:attribute:: tag
       :value: 'ui5-tabcontainer'
+
+
+
+   .. py:attribute:: schema
+
+
+.. py:class:: Ui5TabSeparator(*children: spaday.component.Child, key: str | None = None, **props: Any)
+
+   Bases: :py:obj:`spaday.component.Component`
+
+
+   The `ui5-tab-separator` represents a vertical line to separate tabs inside a `ui5-tabcontainer`.
+
+
+   .. py:attribute:: tag
+      :value: 'ui5-tab-separator'
 
 
 
@@ -2156,8 +2138,4 @@ Package Contents
 
    .. py:attribute:: schema
 
-
-.. py:data:: package
-
-.. py:data:: TOKENS
 
