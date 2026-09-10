@@ -9,7 +9,6 @@ Typed [UI5 Web Components](https://ui5.github.io/webcomponents/) and browser ass
 
 [![Preview of UI5 components in spaday rendering a procurement cockpit](https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp)](./spaday_ui5/example.py)
 
-
 ## Overview
 
 ```python
