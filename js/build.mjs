@@ -24,6 +24,13 @@ const VERSION = JSON.parse(
   fs.readFileSync("node_modules/@ui5/webcomponents/package.json", "utf8"),
 ).version;
 
+// the elements this bundle serves: the define-guard warns about any that another copy registered first
+const TAGS = JSON.parse(
+  fs.readFileSync("../spaday_ui5/custom-elements.json", "utf8"),
+)
+  .modules.flatMap((mod) => mod.declarations.map((decl) => decl.tagName))
+  .filter(Boolean);
+
 // Every element's module -- each registers its element when it loads -- plus Assets.js, which
 // registers the themes and translations beyond the built-in default, behind the define-guard. The
 // guard is a module of its own, imported first: every import evaluates before the importing module's
@@ -63,7 +70,7 @@ const ENTRY = {
     'import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";',
     'import "@ui5/webcomponents/dist/Assets.js";',
     elements,
-    "restoreDefine();",
+    `restoreDefine(${JSON.stringify(`@ui5/webcomponents ${VERSION}`)}, ${JSON.stringify(TAGS)});`,
     PAGE_MODE,
     // the version actually served, so a page holding a second copy can compare and refuse rather
     // than half-work
@@ -138,6 +145,23 @@ async function build() {
       `<script type="importmap">\n${map}\n    </script>`,
     );
   fs.writeFileSync("dist/index.html", html);
+
+  // the exact version of every library this package serves, read by the Python package as its
+  // ComponentPackage.provides, so spaday can reconcile it with the other packages on a page
+  const { dependencies = {} } = JSON.parse(
+    fs.readFileSync("package.json", "utf8"),
+  );
+  const served = Object.fromEntries(
+    Object.keys(dependencies).map((name) => [
+      name,
+      JSON.parse(fs.readFileSync(`node_modules/${name}/package.json`, "utf8"))
+        .version,
+    ]),
+  );
+  fs.writeFileSync(
+    "dist/versions.json",
+    `${JSON.stringify(served, null, 2)}\n`,
+  );
 
   // Copy servable assets to python extension (exclude esm/)
   fs.mkdirSync("../spaday_ui5/extension", { recursive: true });
