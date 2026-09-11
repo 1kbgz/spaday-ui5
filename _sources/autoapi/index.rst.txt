@@ -10,5 +10,6 @@ This page contains auto-generated API reference documentation [#f1]_.
    /autoapi/spaday_ui5/index
    /autoapi/integration/index
    /autoapi/test_example/index
+   /autoapi/test_versions/index
 
 .. [#f1] Created with `sphinx-autoapi <https://github.com/readthedocs/sphinx-autoapi>`_

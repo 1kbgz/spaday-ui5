@@ -207,6 +207,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/integration/index.html">integration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/test_example/index.html">test_example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/test_versions/index.html">test_versions</a></li>
 </ul>
 </li>
 </ul>
@@ -251,11 +252,12 @@
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="spaday-ui5">
 <h1>spaday-ui5<a class="headerlink" href="#spaday-ui5" title="Link to this heading">¶</a></h1>
-<p>Typed <a class="reference external" href="https://ui5.github.io/webcomponents/">UI5 Web Components</a> and browser assets for spaday.</p>
+<p>Typed <a class="reference external" href="https://ui5.github.io/webcomponents/">UI5 Web Components</a> and browser assets for <a class="reference external" href="https://github.com/1kbgz/spaday">spaday</a>.</p>
 <p><a class="reference external" href="https://github.com/1kbgz/spaday-ui5/actions/workflows/build.yaml"><img alt="Build Status" src="https://github.com/1kbgz/spaday-ui5/actions/workflows/build.yaml/badge.svg?branch=main&amp;event=push" /></a>
 <a class="reference external" href="https://codecov.io/gh/1kbgz/spaday-ui5"><img alt="codecov" src="https://codecov.io/gh/1kbgz/spaday-ui5/branch/main/graph/badge.svg" /></a>
 <a class="reference external" href="https://github.com/1kbgz/spaday-ui5"><img alt="License" src="https://img.shields.io/github/license/1kbgz/spaday-ui5" /></a>
 <a class="reference external" href="https://pypi.python.org/pypi/spaday-ui5"><img alt="PyPI" src="https://img.shields.io/pypi/v/spaday-ui5.svg" /></a></p>
+<p><a class="reference download internal" download="" href="_downloads/511130ba57d06e171745555d4873b2f1/example.py"><span class="xref download myst"><img alt="Preview of UI5 components in spaday rendering a procurement cockpit" src="https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp" /></span></a></p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">spaday</span><span class="w"> </span><span class="kn">import</span> <span class="n">SetField</span><span class="p">,</span> <span class="n">element</span><span class="p">,</span> <span class="n">serve</span>
@@ -309,12 +311,6 @@ leaves those imports out of its bundle (<code class="docutils literal notranslat
 elements register once, and its <code class="docutils literal notranslate"><span class="pre">setTheme()</span></code> and icon imports reach these.</p>
 <p>Serving every module those packages export makes the tree large, and a page that loads the whole
 catalog makes several hundred module requests; serve it over HTTP/2 or with compression.</p>
-</section>
-<section id="development">
-<h2>Development<a class="headerlink" href="#development" title="Link to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">catalog</span></code> regenerates the typed classes from the installed UI5 package: it collects its manifest
-into <code class="docutils literal notranslate"><span class="pre">spaday_ui5/custom-elements.json</span></code> (<code class="docutils literal notranslate"><span class="pre">js/tools/manifest.mjs</span></code>) and generates
-<code class="docutils literal notranslate"><span class="pre">spaday_ui5/components.py</span></code> from it.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This library was generated using <a class="reference external" href="https://copier.readthedocs.io/en/stable/">copier</a> from the <a class="reference external" href="https://github.com/python-project-templates/base">Base Python Project Template repository</a>.</p>
