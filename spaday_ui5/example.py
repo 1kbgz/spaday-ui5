@@ -442,6 +442,7 @@ styles = """
   .caption { color: var(--sapContent_LabelColor); font-size: var(--sapFontSmallSize); }
   .figure { font-size: 2.25rem; font-family: var(--sapFontHeaderFamily); color: var(--sapTile_TitleTextColor, var(--sapTextColor)); }
   .card-body ui5-tag { justify-self: start; }
+  .page > ui5-tabcontainer { min-height: 100vh; }
   .approvals { display: grid; gap: .5rem; }
   .req { display: grid; grid-template-columns: auto 1fr auto auto auto; align-items: center; gap: 1rem; padding: .75rem 1rem;
     border: 1px solid var(--spa-border); border-radius: var(--sapElement_BorderCornerRadius); background: var(--spa-surface); }

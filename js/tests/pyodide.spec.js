@@ -31,6 +31,24 @@ async function expectNoHorizontalOverflow(page) {
   expect(overflow).toBeLessThanOrEqual(1);
 }
 
+async function expectTabNavigationToKeepScrollPosition(page) {
+  const tabContainer = page.locator("ui5-tabcontainer");
+
+  for (const name of ["Suppliers", "New request", "Approvals"]) {
+    await tabContainer.evaluate((element) => {
+      window.scrollTo({
+        behavior: "instant",
+        top: element.getBoundingClientRect().top + window.scrollY - 120,
+      });
+    });
+    const before = await page.evaluate(() => window.scrollY);
+    await page.getByRole("tab", { name }).click();
+    await expect
+      .poll(() => page.evaluate(() => window.scrollY))
+      .toBeCloseTo(before, 0);
+  }
+}
+
 test("runs the complete procurement example in Pyodide", async ({ page }) => {
   test.skip(!built, "run `make pyodide-example` first");
   test.setTimeout(240_000);
@@ -54,6 +72,8 @@ test("runs the complete procurement example in Pyodide", async ({ page }) => {
   const id = await pending.getAttribute("data-id");
   await pending.getByRole("button", { name: "Approve" }).click();
   await expect(page.locator("#toast")).toContainText(`Approved ${id}`);
+
+  await expectTabNavigationToKeepScrollPosition(page);
 
   await expectNoHorizontalOverflow(page);
   expect(errors).toEqual([]);
