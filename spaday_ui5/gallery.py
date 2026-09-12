@@ -7,7 +7,7 @@ import keyword
 import textwrap
 import tokenize
 
-from spaday import element
+from spaday import SetProp, by_id, element
 from spaday.backends.starlette import serve
 from spaday.components.shell import App, Body, Main, Nav
 
@@ -100,6 +100,183 @@ def _demo(title: str, description: str, source: str, preview):
         _code(source),
         class_="gallery-card",
     )
+
+
+def _catalog_component(name: str, schema):
+    """Create a visible, labeled instance instead of an empty hidden probe."""
+    label = schema.tag.removeprefix("ui5-").replace("-", " ").title()
+    props = {prop.name for prop in schema.props}
+    values = {
+        "display-value": "64%",
+        "header-text": label,
+        "initials": "UI",
+        "subtitle-text": "Live preview",
+        "text": label,
+        "title-text": label,
+    }
+    kwargs = {prop.replace("-", "_"): value for prop, value in values.items() if prop in props}
+    kwargs.update(
+        {
+            "Ui5AvatarBadge": {"icon": "employee", "state": "Positive"},
+            "Ui5BusyIndicator": {"active": True, "text": "Loading"},
+            "Ui5ButtonBadge": {"text": "3"},
+            "Ui5Checkbox": {"checked": True, "text": "Selected"},
+            "Ui5ColorPaletteItem": {"value": "#0a6ed1"},
+            "Ui5Date": {"value": "2026-09-14"},
+            "Ui5DateRange": {"start_value": "2026-09-14", "end_value": "2026-09-18"},
+            "Ui5Icon": {"name": "employee"},
+            "Ui5InputIcon": {"name": "search"},
+            "Ui5ProgressIndicator": {"value": 64, "display_value": "64%"},
+            "Ui5RadioButton": {"checked": True, "text": "Selected"},
+            "Ui5RangeSlider": {"value": 28, "end_value": 72},
+            "Ui5RatingIndicator": {"value": 4},
+            "Ui5Slider": {"value": 64},
+            "Ui5SpecialDate": {"value": "2026-09-14"},
+            "Ui5Switch": {"checked": True, "text_on": "On", "text_off": "Off"},
+            "Ui5Token": {"text": "Token"},
+        }.get(name, {})
+    )
+    component = getattr(_components, name)(**kwargs)
+    if "" in schema.slots and "text" not in props:
+        component.text(label)
+    return component
+
+
+def _catalog_preview(name: str, schema):
+    """Render a component directly or through the parent context it requires."""
+    component = _catalog_component(name, schema)
+    label = schema.tag.removeprefix("ui5-").replace("-", " ").title()
+
+    if name == "Ui5AvatarBadge":
+        parent = Ui5Avatar(initials="UI").child_in("badge", component)
+        return element("div", parent, class_="structural-preview")
+    if name in {"Ui5Date", "Ui5DateRange"}:
+        return element("div", _components.Ui5Calendar(component), class_="structural-preview")
+    if name == "Ui5SpecialDate":
+        parent = _components.Ui5Calendar().child_in("specialDates", component)
+        return element("div", parent, class_="structural-preview")
+    if name == "Ui5Form":
+        parent = _components.Ui5Form(
+            _components.Ui5FormItem(_components.Ui5Input(value="Live preview")).child_in("labelContent", _components.Ui5Label().text("Field"))
+        )
+        return element("div", parent, class_="structural-preview")
+    if name in {"Ui5Tab", "Ui5TabSeparator"}:
+        return element(
+            "div",
+            Ui5Tabcontainer(
+                Ui5Tab(text="Overview", selected=True),
+                component,
+                Ui5Tab(text="Activity"),
+            ),
+            class_="structural-preview",
+        )
+    if name in {
+        "Ui5TableHeaderRow",
+        "Ui5TableRow",
+        "Ui5TableSelection",
+        "Ui5TableSelectionMulti",
+        "Ui5TableSelectionSingle",
+        "Ui5TableVirtualizer",
+    }:
+        table = _components.Ui5Table(_components.Ui5TableRow(_components.Ui5TableCell().text("Live row"))).child_in(
+            "headerRow",
+            _components.Ui5TableHeaderRow(_components.Ui5TableHeaderCell().text("Component")),
+        )
+        if name in {"Ui5TableHeaderRow", "Ui5TableRow"}:
+            table = _components.Ui5Table(_components.Ui5TableRow(_components.Ui5TableCell().text("Live row"))).child_in(
+                "headerRow",
+                _components.Ui5TableHeaderRow(_components.Ui5TableHeaderCell().text("Component")),
+            )
+        else:
+            table = table.child_in("features", component)
+        return element("div", table, class_="structural-preview")
+    if name == "Ui5ToolbarSpacer":
+        return element(
+            "div",
+            Ui5Toolbar(Ui5ToolbarButton(text="Start"), component, Ui5ToolbarButton(text="End")),
+            class_="structural-preview",
+        )
+    if name == "Ui5DropIndicator":
+        target_id = "catalog-drop-indicator"
+        return element(
+            "div",
+            element("span").text("Drop target"),
+            _components.Ui5DropIndicator(id=target_id, placement="After"),
+            class_="drop-indicator-preview",
+        )
+    if name == "Ui5SliderTooltip":
+        target_id = "catalog-slider-tooltip"
+        return element(
+            "div",
+            Ui5Button(id=f"{target_id}-opener").text("Open Slider Tooltip").on("click", SetProp(by_id(target_id), "open", True)),
+            _components.Ui5SliderTooltip(id=target_id, value="64", editable=True),
+            class_="overlay-preview",
+        )
+    if name == "Ui5TimePickerClock":
+        return _components.Ui5TimePickerClock(
+            **{
+                "active": True,
+                "display-step": 1,
+                "item-max": 12,
+                "item-min": 1,
+                "selected-value": 10,
+                "value-step": 1,
+            }
+        )
+    if name == "Ui5MenuSeparator":
+        target_id = "catalog-menu-separator"
+        opener_id = f"{target_id}-opener"
+        menu = _components.Ui5Menu(
+            _components.Ui5MenuItem(text="First item"),
+            component,
+            _components.Ui5MenuItem(text="Second item"),
+            id=target_id,
+            opener=opener_id,
+        )
+        return element(
+            "div",
+            Ui5Button(id=opener_id).text("Open Menu Separator").on("click", SetProp(by_id(target_id), "open", True)),
+            menu,
+            class_="overlay-preview",
+        )
+    if name in {
+        "Ui5ColorPalettePopover",
+        "Ui5Dialog",
+        "Ui5Menu",
+        "Ui5Popover",
+        "Ui5ResponsivePopover",
+        "Ui5Toast",
+    }:
+        target_id = f"catalog-{schema.tag.removeprefix('ui5-')}"
+        opener_id = f"{target_id}-opener"
+        if name == "Ui5ColorPalettePopover":
+            component = _components.Ui5ColorPalettePopover(
+                _components.Ui5ColorPaletteItem(value="#0a6ed1"),
+                id=target_id,
+                opener=opener_id,
+            )
+        elif name == "Ui5Menu":
+            component = _components.Ui5Menu(
+                _components.Ui5MenuItem(text="Live menu item"),
+                _components.Ui5MenuSeparator(),
+                _components.Ui5MenuItem(text="Second item"),
+                id=target_id,
+                opener=opener_id,
+            )
+        else:
+            component = getattr(_components, name)(
+                element("p").text(f"Live {label.lower()} content"),
+                id=target_id,
+                opener=opener_id if name in {"Ui5Popover", "Ui5ResponsivePopover"} else None,
+                header_text=label if name in {"Ui5Dialog", "Ui5Popover", "Ui5ResponsivePopover"} else None,
+            )
+        return element(
+            "div",
+            Ui5Button(id=opener_id).text(f"Open {label}").on("click", SetProp(by_id(target_id), "open", True)),
+            component,
+            class_="overlay-preview",
+        )
+    return component
 
 
 actions = _demo(
@@ -226,7 +403,7 @@ catalog = element(
             "div",
             element("h2").text("Complete generated catalog"),
             element("p").text(
-                "Every wrapper in the UI5 Main package is mounted below; structural and overlay elements remain intentionally dormant."
+                "Every wrapper in the UI5 Main package is rendered below, including interactive overlays and structural parent contexts."
             ),
         ),
         element("span", class_="catalog-count").text(f"{len(COMPONENT_NAMES)} / {len(COMPONENT_NAMES)}"),
@@ -238,7 +415,7 @@ catalog = element(
             element(
                 "div",
                 element("code").text(schema.tag),
-                element("span", getattr(_components, name)(), class_="catalog-probe"),
+                element("div", _catalog_preview(name, schema), class_="catalog-probe"),
                 class_="catalog-item",
             )
             for name, schema in zip(COMPONENT_NAMES, package.catalog, strict=True)
@@ -312,10 +489,16 @@ styles = """
   .token-comment { color: #94a3b8; } .token-operator { color: #c4b5fd; }
   .catalog-card { overflow: visible; }
   .catalog-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; padding: 1.2rem; }
-  .catalog-item { min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;
+  .catalog-item { display: grid; align-content: start; gap: .5rem; min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;
     background: color-mix(in srgb, var(--sapBackgroundColor) 72%, var(--sapBaseColor)); }
   .catalog-item code { display: block; overflow: hidden; color: var(--sapLinkColor); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }
-  .catalog-probe { display: none; }
+  .catalog-probe { display: flex; align-items: center; min-width: 0; min-height: 3.5rem; max-height: 20rem; overflow: auto;
+    padding: .5rem; border: 1px dashed var(--spa-border); border-radius: .4rem; background: var(--sapBaseColor); }
+  .catalog-probe > * { max-width: 100%; }
+  .overlay-preview, .structural-preview { display: grid; gap: .5rem; min-width: 0; width: 100%; }
+  .structural-preview small { color: var(--sapContent_LabelColor); line-height: 1.35; }
+  .drop-indicator-preview { position: relative; min-height: 2.5rem; padding: .65rem; border: 1px solid var(--spa-border); }
+  .drop-indicator-preview ui5-drop-indicator { display: block !important; position: absolute; inset: auto 0 0 !important; width: 100%; height: .2rem !important; }
   details { border-top: 1px solid var(--spa-border); }
   summary { padding: 1rem 1.2rem; cursor: pointer; color: var(--sapLinkColor); font-weight: 700; }
   @media (max-width: 760px) {
