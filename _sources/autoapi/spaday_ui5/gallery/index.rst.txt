@@ -36,6 +36,8 @@ Functions
    spaday_ui5.gallery._offsets
    spaday_ui5.gallery._code
    spaday_ui5.gallery._demo
+   spaday_ui5.gallery._catalog_component
+   spaday_ui5.gallery._catalog_preview
 
 
 Module Contents
@@ -60,6 +62,16 @@ Module Contents
 
 
 .. py:function:: _demo(title: str, description: str, source: str, preview)
+
+.. py:function:: _catalog_component(name: str, schema)
+
+   Create a visible, labeled instance instead of an empty hidden probe.
+
+
+.. py:function:: _catalog_preview(name: str, schema)
+
+   Render a component directly or through the parent context it requires.
+
 
 .. py:data:: actions
 
@@ -142,10 +154,16 @@ Module Contents
         .token-comment { color: #94a3b8; } .token-operator { color: #c4b5fd; }
         .catalog-card { overflow: visible; }
         .catalog-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; padding: 1.2rem; }
-        .catalog-item { min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;
+        .catalog-item { display: grid; align-content: start; gap: .5rem; min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;
           background: color-mix(in srgb, var(--sapBackgroundColor) 72%, var(--sapBaseColor)); }
         .catalog-item code { display: block; overflow: hidden; color: var(--sapLinkColor); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }
-        .catalog-probe { display: none; }
+        .catalog-probe { display: flex; align-items: center; min-width: 0; min-height: 3.5rem; max-height: 20rem; overflow: auto;
+          padding: .5rem; border: 1px dashed var(--spa-border); border-radius: .4rem; background: var(--sapBaseColor); }
+        .catalog-probe > * { max-width: 100%; }
+        .overlay-preview, .structural-preview { display: grid; gap: .5rem; min-width: 0; width: 100%; }
+        .structural-preview small { color: var(--sapContent_LabelColor); line-height: 1.35; }
+        .drop-indicator-preview { position: relative; min-height: 2.5rem; padding: .65rem; border: 1px solid var(--spa-border); }
+        .drop-indicator-preview ui5-drop-indicator { display: block !important; position: absolute; inset: auto 0 0 !important; width: 100%; height: .2rem !important; }
         details { border-top: 1px solid var(--spa-border); }
         summary { padding: 1rem 1.2rem; cursor: pointer; color: var(--sapLinkColor); font-weight: 700; }
         @media (max-width: 760px) {

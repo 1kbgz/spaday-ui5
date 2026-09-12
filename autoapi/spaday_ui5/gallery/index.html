@@ -312,6 +312,12 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#spaday_ui5.gallery._demo" title="spaday_ui5.gallery._demo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_demo</span></code></a>(title, description, source, preview)</p></td>
 <td><p></p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spaday_ui5.gallery._catalog_component" title="spaday_ui5.gallery._catalog_component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_catalog_component</span></code></a>(name, schema)</p></td>
+<td><p>Create a visible, labeled instance instead of an empty hidden probe.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spaday_ui5.gallery._catalog_preview" title="spaday_ui5.gallery._catalog_preview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_catalog_preview</span></code></a>(name, schema)</p></td>
+<td><p>Render a component directly or through the parent context it requires.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -348,6 +354,18 @@
 <dt class="sig sig-object py" id="spaday_ui5.gallery._demo">
 <span class="sig-prename descclassname"><span class="pre">spaday_ui5.gallery.</span></span><span class="sig-name descname"><span class="pre">_demo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preview</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#spaday_ui5.gallery._demo" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="spaday_ui5.gallery._catalog_component">
+<span class="sig-prename descclassname"><span class="pre">spaday_ui5.gallery.</span></span><span class="sig-name descname"><span class="pre">_catalog_component</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#spaday_ui5.gallery._catalog_component" title="Link to this definition">¶</a></dt>
+<dd><p>Create a visible, labeled instance instead of an empty hidden probe.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="spaday_ui5.gallery._catalog_preview">
+<span class="sig-prename descclassname"><span class="pre">spaday_ui5.gallery.</span></span><span class="sig-name descname"><span class="pre">_catalog_preview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schema</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#spaday_ui5.gallery._catalog_preview" title="Link to this definition">¶</a></dt>
+<dd><p>Render a component directly or through the parent context it requires.</p>
+</dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="spaday_ui5.gallery.actions">
@@ -433,10 +451,16 @@
 <span class="sd">  .token-comment { color: #94a3b8; } .token-operator { color: #c4b5fd; }</span>
 <span class="sd">  .catalog-card { overflow: visible; }</span>
 <span class="sd">  .catalog-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; padding: 1.2rem; }</span>
-<span class="sd">  .catalog-item { min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;</span>
+<span class="sd">  .catalog-item { display: grid; align-content: start; gap: .5rem; min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;</span>
 <span class="sd">    background: color-mix(in srgb, var(--sapBackgroundColor) 72%, var(--sapBaseColor)); }</span>
 <span class="sd">  .catalog-item code { display: block; overflow: hidden; color: var(--sapLinkColor); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }</span>
-<span class="sd">  .catalog-probe { display: none; }</span>
+<span class="sd">  .catalog-probe { display: flex; align-items: center; min-width: 0; min-height: 3.5rem; max-height: 20rem; overflow: auto;</span>
+<span class="sd">    padding: .5rem; border: 1px dashed var(--spa-border); border-radius: .4rem; background: var(--sapBaseColor); }</span>
+<span class="sd">  .catalog-probe &gt; * { max-width: 100%; }</span>
+<span class="sd">  .overlay-preview, .structural-preview { display: grid; gap: .5rem; min-width: 0; width: 100%; }</span>
+<span class="sd">  .structural-preview small { color: var(--sapContent_LabelColor); line-height: 1.35; }</span>
+<span class="sd">  .drop-indicator-preview { position: relative; min-height: 2.5rem; padding: .65rem; border: 1px solid var(--spa-border); }</span>
+<span class="sd">  .drop-indicator-preview ui5-drop-indicator { display: block !important; position: absolute; inset: auto 0 0 !important; width: 100%; height: .2rem !important; }</span>
 <span class="sd">  details { border-top: 1px solid var(--spa-border); }</span>
 <span class="sd">  summary { padding: 1rem 1.2rem; cursor: pointer; color: var(--sapLinkColor); font-weight: 700; }</span>
 <span class="sd">  @media (max-width: 760px) {</span>
@@ -527,6 +551,8 @@
 <li><a class="reference internal" href="#spaday_ui5.gallery._offsets"><code class="docutils literal notranslate"><span class="pre">_offsets()</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.gallery._code"><code class="docutils literal notranslate"><span class="pre">_code()</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.gallery._demo"><code class="docutils literal notranslate"><span class="pre">_demo()</span></code></a></li>
+<li><a class="reference internal" href="#spaday_ui5.gallery._catalog_component"><code class="docutils literal notranslate"><span class="pre">_catalog_component()</span></code></a></li>
+<li><a class="reference internal" href="#spaday_ui5.gallery._catalog_preview"><code class="docutils literal notranslate"><span class="pre">_catalog_preview()</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.gallery.actions"><code class="docutils literal notranslate"><span class="pre">actions</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.gallery.inputs"><code class="docutils literal notranslate"><span class="pre">inputs</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.gallery.navigation"><code class="docutils literal notranslate"><span class="pre">navigation</span></code></a></li>

@@ -290,7 +290,8 @@ Module Contents
           background: var(--sapBaseColor); }
         .dark-toggle { display: inline-flex; align-items: center; gap: .5rem; }
         .page { box-sizing: border-box; width: 100%; max-width: 76rem; margin: 0 auto; padding: 1.5rem 1rem;
-          display: grid; align-content: start; gap: 1rem; }
+          display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 1rem; }
+        .page > * { min-width: 0; }
         .hero { overflow: hidden; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid color-mix(in srgb, var(--sapBrandColor) 24%, var(--spa-border));
           border-radius: 1.25rem; color: white; background: linear-gradient(125deg, #063b62 0%, #075f8f 54%, #0b75b7 100%);
           box-shadow: 0 1.5rem 3rem color-mix(in srgb, #063b62 20%, transparent); }
