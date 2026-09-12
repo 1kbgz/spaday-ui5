@@ -1,0 +1,1 @@
+import{a as e,b as a,c as t}from"./chunk-UUGHR7SZ.js";function r(){return a(e,{children:a("span",{children:this._renderEmptyIndicator?t(e,{children:[a("span",{className:"empty-indicator","aria-hidden":"true",children:this._emptyIndicatorSymbol}),a("span",{className:"empty-indicator-aria-label",children:this._emptyIndicatorAriaLabel})]}):a("slot",{})})})}export{r as a};

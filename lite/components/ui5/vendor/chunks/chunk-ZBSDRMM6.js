@@ -1,0 +1,1 @@
+import{b as l,c as a}from"./chunk-UUGHR7SZ.js";function s(){return a("label",{class:"ui5-label-root",onClick:this._onclick,children:[l("span",{class:"ui5-label-text-wrapper",children:l("slot",{})}),l("span",{"aria-hidden":"true",class:"ui5-label-required-colon","data-ui5-colon":this._colonSymbol})]})}export{s as a};

@@ -1,0 +1,1 @@
+import{b as e}from"./chunk-7UODIHTC.js";var s="draw-freehand",t="M435 0h72v72h-72V0zm-30 64l33 36-337 347-32-36zM5 440h72v72H5v-72z",n=!1,r=null,o="0 0 512 512",a="business-suite-v1",c="@ui5/webcomponents-icons-business-suite";e(s,{pathData:t,ltr:n,viewBox:o,collection:a,packageName:c});var u="business-suite-v1/draw-freehand";export{t as a,n as b,r as c,o as d,u as e};

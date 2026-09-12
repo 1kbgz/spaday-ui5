@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../../genindex.html"><link rel="search" title="Search" href="../../../search.html"><link rel="next" title="integration" href="../../integration/index.html"><link rel="prev" title="spaday_ui5.components" href="../components/index.html">
+<link rel="index" title="Index" href="../../../genindex.html"><link rel="search" title="Search" href="../../../search.html"><link rel="next" title="spaday_ui5.gallery" href="../gallery/index.html"><link rel="prev" title="spaday_ui5.components" href="../components/index.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>spaday_ui5.example - spaday-ui5 v0.1.0</title>
@@ -203,10 +203,12 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../index.html">spaday_ui5</a><input aria-label="Toggle navigation of spaday_ui5" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../components/index.html">spaday_ui5.components</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">spaday_ui5.example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gallery/index.html">spaday_ui5.gallery</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../integration/index.html">integration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../test_example/index.html">test_example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../test_gallery/index.html">test_gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../test_versions/index.html">test_versions</a></li>
 </ul>
 </li>
@@ -303,10 +305,16 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#spaday_ui5.example.submitted" title="spaday_ui5.example.submitted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">submitted</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#spaday_ui5.example.page" title="spaday_ui5.example.page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">page</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spaday_ui5.example.hero" title="spaday_ui5.example.hero"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hero</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#spaday_ui5.example.styles" title="spaday_ui5.example.styles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">styles</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#spaday_ui5.example.page" title="spaday_ui5.example.page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">page</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spaday_ui5.example.styles" title="spaday_ui5.example.styles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">styles</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spaday_ui5.example.initial_store" title="spaday_ui5.example.initial_store"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initial_store</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#spaday_ui5.example.app" title="spaday_ui5.example.app"><code class="xref py py-obj docutils literal notranslate"><span class="pre">app</span></code></a></p></td>
@@ -670,6 +678,11 @@ validated to form a valid model.</p>
 <dd></dd></dl>
 
 <dl class="py data">
+<dt class="sig sig-object py" id="spaday_ui5.example.hero">
+<span class="sig-prename descclassname"><span class="pre">spaday_ui5.example.</span></span><span class="sig-name descname"><span class="pre">hero</span></span><a class="headerlink" href="#spaday_ui5.example.hero" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
 <dt class="sig sig-object py" id="spaday_ui5.example.page">
 <span class="sig-prename descclassname"><span class="pre">spaday_ui5.example.</span></span><span class="sig-name descname"><span class="pre">page</span></span><a class="headerlink" href="#spaday_ui5.example.page" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -679,13 +692,24 @@ validated to form a valid model.</p>
 <span class="sig-prename descclassname"><span class="pre">spaday_ui5.example.</span></span><span class="sig-name descname"><span class="pre">styles</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Multiline-String</span></em><a class="headerlink" href="#spaday_ui5.example.styles" title="Link to this definition">¶</a></dt>
 <dd><details><summary>Show Value</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""</span>
 <span class="sd">&lt;style&gt;</span>
-<span class="sd">  body { margin: 0; font-family: var(--sapFontFamily); background: var(--sapBackgroundColor); color: var(--sapTextColor); }</span>
-<span class="sd">  spa-nav { justify-content: space-between; }</span>
+<span class="sd">  * { box-sizing: border-box; }</span>
+<span class="sd">  body { margin: 0; font-family: var(--sapFontFamily); color: var(--sapTextColor);</span>
+<span class="sd">    background: radial-gradient(circle at 12% 0%, color-mix(in srgb, var(--sapBrandColor) 13%, transparent), transparent 32rem),</span>
+<span class="sd">      var(--sapBackgroundColor); }</span>
+<span class="sd">  spa-nav { position: sticky; z-index: 20; top: 0; justify-content: space-between; border-bottom: 1px solid var(--spa-border);</span>
+<span class="sd">    background: var(--sapBaseColor); }</span>
 <span class="sd">  .dark-toggle { display: inline-flex; align-items: center; gap: .5rem; }</span>
 <span class="sd">  .page { box-sizing: border-box; width: 100%; max-width: 76rem; margin: 0 auto; padding: 1.5rem 1rem;</span>
 <span class="sd">    display: grid; align-content: start; gap: 1rem; }</span>
+<span class="sd">  .hero { overflow: hidden; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid color-mix(in srgb, var(--sapBrandColor) 24%, var(--spa-border));</span>
+<span class="sd">    border-radius: 1.25rem; color: white; background: linear-gradient(125deg, #063b62 0%, #075f8f 54%, #0b75b7 100%);</span>
+<span class="sd">    box-shadow: 0 1.5rem 3rem color-mix(in srgb, #063b62 20%, transparent); }</span>
+<span class="sd">  .eyebrow { display: block; margin-bottom: .75rem; font-size: .75rem; font-weight: 700; letter-spacing: .12em; opacity: .76; }</span>
+<span class="sd">  .hero h1 { max-width: 15ch; margin: 0; font: 700 clamp(2rem, 5vw, 3.5rem)/1.02 var(--sapFontHeaderFamily); letter-spacing: -.035em; }</span>
+<span class="sd">  .hero-copy { max-width: 42rem; margin: 1rem 0 1.25rem; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.55; opacity: .88; }</span>
+<span class="sd">  .hero-tags { display: flex; flex-wrap: wrap; gap: .5rem; }</span>
 <span class="sd">  .kpis { flex-wrap: wrap; }</span>
-<span class="sd">  .kpis ui5-card { flex: 1 1 16rem; }</span>
+<span class="sd">  .kpis ui5-card { flex: 1 1 16rem; min-width: 0; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem color-mix(in srgb, #001b2e 8%, transparent); }</span>
 <span class="sd">  .card-body { display: grid; gap: .5rem; padding: 0 1rem 1rem; }</span>
 <span class="sd">  .caption { color: var(--sapContent_LabelColor); font-size: var(--sapFontSmallSize); }</span>
 <span class="sd">  .figure { font-size: 2.25rem; font-family: var(--sapFontHeaderFamily); color: var(--sapTile_TitleTextColor, var(--sapTextColor)); }</span>
@@ -698,14 +722,23 @@ validated to form a valid model.</p>
 <span class="sd">  .req-actions { display: flex; gap: .25rem; }</span>
 <span class="sd">  .request { display: grid; gap: .5rem; }</span>
 <span class="sd">  @media (max-width: 720px) {</span>
+<span class="sd">    spa-nav { position: static; flex-wrap: wrap; gap: .75rem; }</span>
+<span class="sd">    .page { padding: .75rem; }</span>
+<span class="sd">    .hero { border-radius: 1rem; }</span>
 <span class="sd">    .req { grid-template-columns: auto 1fr; }</span>
 <span class="sd">    .req-amount, .req ui5-tag, .req-actions { grid-column: 2; justify-self: start; }</span>
+<span class="sd">    .req-actions { flex-wrap: wrap; }</span>
 <span class="sd">  }</span>
 <span class="sd">&lt;/style&gt;</span>
 <span class="sd">"""</span>
 </pre></div>
 </div>
 </details></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="spaday_ui5.example.initial_store">
+<span class="sig-prename descclassname"><span class="pre">spaday_ui5.example.</span></span><span class="sig-name descname"><span class="pre">initial_store</span></span><a class="headerlink" href="#spaday_ui5.example.initial_store" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="spaday_ui5.example.app">
@@ -720,12 +753,12 @@ validated to form a valid model.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../../integration/index.html">
+          <a class="next-page" href="../gallery/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">integration</div>
+                <div class="title">spaday_ui5.gallery</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -830,8 +863,10 @@ validated to form a valid model.</p>
 <li><a class="reference internal" href="#spaday_ui5.example.form_item"><code class="docutils literal notranslate"><span class="pre">form_item()</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.example.request_form"><code class="docutils literal notranslate"><span class="pre">request_form</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.example.submitted"><code class="docutils literal notranslate"><span class="pre">submitted</span></code></a></li>
+<li><a class="reference internal" href="#spaday_ui5.example.hero"><code class="docutils literal notranslate"><span class="pre">hero</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.example.page"><code class="docutils literal notranslate"><span class="pre">page</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.example.styles"><code class="docutils literal notranslate"><span class="pre">styles</span></code></a></li>
+<li><a class="reference internal" href="#spaday_ui5.example.initial_store"><code class="docutils literal notranslate"><span class="pre">initial_store</span></code></a></li>
 <li><a class="reference internal" href="#spaday_ui5.example.app"><code class="docutils literal notranslate"><span class="pre">app</span></code></a></li>
 </ul>
 </li>

@@ -1,0 +1,1 @@
+import{a as r}from"./chunk-5JJCVFY5.js";import{j as d,k as t}from"./chunk-IHK2QQMY.js";import{a}from"./chunk-AZW3O6W6.js";var n,e;a(()=>{n=void 0,e=void 0});var p=()=>(n===void 0&&(n=d()),n&&n in r?n:r.Gregorian),y=()=>(e===void 0&&(e=t()),e&&e in r,e);export{p as a,y as b};

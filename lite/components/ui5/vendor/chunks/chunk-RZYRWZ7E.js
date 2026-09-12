@@ -1,0 +1,1 @@
+var t=new WeakMap,e=class u{static get tasks(){return t}static enqueue(s,a){t.has(s)||t.set(s,[]),t.get(s).push(a)}static run(s,a){return t.has(s)||t.set(s,[]),a().then(()=>{let r=t.get(s);if(r.length>0)return u.run(s,r.shift());t.delete(s)})}static push(s,a){t.get(s)?u.enqueue(s,a):u.run(s,a)}},c=e;export{c as a};

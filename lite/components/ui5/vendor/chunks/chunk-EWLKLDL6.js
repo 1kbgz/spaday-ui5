@@ -1,0 +1,1 @@
+import{f as i}from"./chunk-IHK2QQMY.js";import{a as o}from"./chunk-AZW3O6W6.js";var c=["value-changed","click"],e;o(()=>{e=void 0});var s=n=>c.includes(n),l=n=>{let t=r();return!(typeof t!="boolean"&&t.events&&t.events.includes&&t.events.includes(n))},r=()=>(e===void 0&&(e=i()),e),d=n=>{e=n},a=n=>{let t=r();return s(n)?!1:t===!0?!0:!l(n)};export{r as a,d as b,a as c};

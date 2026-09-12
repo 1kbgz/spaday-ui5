@@ -1,0 +1,1 @@
+import"../../../../chunks/chunk-VC46IEJQ.js";var t=new Map,n=new Map,c=new Map,o=async e=>{t.get(e)||t.set(e,fetch(e));let s=await t.get(e);return s&&!c.get(e)&&c.set(e,s.text()),c.get(e)},a=async e=>{t.get(e)||t.set(e,fetch(e));let s=await t.get(e);return s&&!n.get(e)&&n.set(e,s.json()),n.get(e)};export{a as fetchJsonOnce,o as fetchTextOnce};

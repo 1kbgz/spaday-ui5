@@ -1,0 +1,1 @@
+import{a,b,c,d,e}from"../../../../chunks/chunk-XBRKYN7W.js";import"../../../../chunks/chunk-VC46IEJQ.js";export{c as DEFAULT_LANGUAGE,d as DEFAULT_LOCALE,a as DEFAULT_THEME,e as SUPPORTED_LOCALES,b as SUPPORTED_THEMES};

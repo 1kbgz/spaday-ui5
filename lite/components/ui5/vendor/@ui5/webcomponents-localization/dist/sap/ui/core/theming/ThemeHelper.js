@@ -1,0 +1,1 @@
+import"../../../../../../../chunks/chunk-VC46IEJQ.js";var n={validateAndFallbackTheme:function(e){return e},isKnownTheme:function(){return!1},getMetadata:function(){return{}},isSapTheme:function(){return!1}};export{n as default};

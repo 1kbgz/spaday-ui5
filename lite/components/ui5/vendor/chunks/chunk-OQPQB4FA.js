@@ -1,0 +1,1 @@
+import{a as e,b as i,c as n}from"./chunk-UUGHR7SZ.js";function t(){return i(e,{children:this._popin?n(e,{children:[i("div",{id:"popin-header",ref:this._injectHeaderNodes.bind(this)}),i("span",{id:"popin-colon","aria-hidden":"true",children:this._i18nPopinColon}),i("slot",{id:"popin-content"})]}):i("slot",{})})}export{t as a};

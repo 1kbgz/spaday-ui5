@@ -1,0 +1,1 @@
+import{a as c}from"./chunk-RMB23MJP.js";import{a as r}from"./chunk-T2A2NVN5.js";import{ia as a}from"./chunk-BVD64EST.js";import{d as n}from"./chunk-XBRKYN7W.js";var o=new Map,i=e=>(o.has(e)||o.set(e,new r(e)),o.get(e)),f=e=>{try{if(e&&typeof e=="string")return i(e)}catch{}return new r(n)},u=e=>{if(e)return f(e);let t=a();return t?i(t):f(c())},p=u;export{p as a};

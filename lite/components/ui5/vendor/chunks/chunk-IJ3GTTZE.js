@@ -1,0 +1,1 @@
+import{b as t}from"./chunk-7UODIHTC.js";var o="raise-fault",n="M261.5 336l92 16-269 160 46-199 76 13 94-115-129-14 129-197h97l-94 150 124 10z",a=!1,r=null,c="0 0 512 512",e="tnt-v2",s="@ui5/webcomponents-icons-tnt";t(o,{pathData:n,ltr:a,viewBox:c,collection:e,packageName:s});var i="tnt-v2/raise-fault";export{n as a,a as b,r as c,c as d,i as e};

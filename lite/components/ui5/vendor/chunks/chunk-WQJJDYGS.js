@@ -1,0 +1,1 @@
+import{b as t}from"./chunk-7UODIHTC.js";var o="indicator-active",c="M85 171h341q36 0 61 25t25 60-25 60-61 25H85q-35 0-60-25T0 256t25-60 60-25z",n=!1,r=null,a="0 0 512 512",e="tnt-v3",i="@ui5/webcomponents-icons-tnt";t(o,{pathData:c,ltr:n,viewBox:a,collection:e,packageName:i});var l="tnt-v3/indicator-active";export{c as a,n as b,r as c,a as d,l as e};

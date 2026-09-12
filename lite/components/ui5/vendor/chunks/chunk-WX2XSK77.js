@@ -1,0 +1,1 @@
+import{a as D}from"./chunk-HQKBCZQQ.js";import{a as o}from"./chunk-UI5TNK3T.js";import{a}from"./chunk-W2JQNNMY.js";var m=(n,r,s,f)=>{let e=o.fromLocalJSDate(a.getInstance(s*1e3),n),t=o.fromLocalJSDate(a.getInstance(s*1e3),n);return e.setDate(1),f&&(e.setMonth(0),t.setMonth(11)),t.setDate(D(t)),e=new o(e,r),t=new o(t,r),{firstDate:e,lastDate:t}},g=m;export{g as a};

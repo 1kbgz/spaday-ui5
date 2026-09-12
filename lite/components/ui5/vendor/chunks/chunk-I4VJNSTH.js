@@ -1,0 +1,1 @@
+var b=(n,e={})=>t=>{Object.prototype.hasOwnProperty.call(t,"metadata")||(t.metadata={});let a=t.metadata;a.events||(a.events={});let s=a.events;s[n]||(e.bubbles=!!e.bubbles,e.cancelable=!!e.cancelable,s[n]=e)},c=b;export{c as a};

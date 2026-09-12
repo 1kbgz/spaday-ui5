@@ -1,0 +1,1 @@
+import"../../../../chunks/chunk-VC46IEJQ.js";var t;(function(d){d.TopStart="TopStart",d.TopCenter="TopCenter",d.TopEnd="TopEnd",d.MiddleStart="MiddleStart",d.MiddleCenter="MiddleCenter",d.MiddleEnd="MiddleEnd",d.BottomStart="BottomStart",d.BottomCenter="BottomCenter",d.BottomEnd="BottomEnd"})(t||(t={}));var r=t;export{r as default};

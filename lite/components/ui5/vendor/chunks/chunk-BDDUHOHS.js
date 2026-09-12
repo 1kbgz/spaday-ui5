@@ -1,0 +1,1 @@
+import{b as o}from"./chunk-7UODIHTC.js";var n="megamenu",t="M11.25 5a.75.75 0 0 1 .608 1.19l-3.25 4.5a.75.75 0 0 1-1.216 0l-3.25-4.5A.752.752 0 0 1 4.75 5h6.5Z",c=!1,m=null,e="0 0 16 16",a="SAP-icons-v5",s="@ui5/webcomponents-icons";o(n,{pathData:t,ltr:c,viewBox:e,collection:a,packageName:s});var i="SAP-icons-v5/megamenu";export{t as a,c as b,m as c,e as d,i as e};

@@ -1,0 +1,1 @@
+import"../../../../../../chunks/chunk-VC46IEJQ.js";var e={getAllowlistService:function(){return null},getFrameOptions:function(){return"allow"},getSecurityTokenHandlers:function(){return[]},setSecurityTokenHandlers:function(){}};export{e as default};

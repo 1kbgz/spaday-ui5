@@ -1,0 +1,1 @@
+import{b as s}from"./chunk-7UODIHTC.js";var e="sidepanel",t="M0 0h512v512H0V0zm352 32H32v448h320V32zm32 0v448h96V32h-96z",n=!1,l=null,o="0 0 512 512",c="business-suite-v1",a="@ui5/webcomponents-icons-business-suite";s(e,{pathData:t,ltr:n,viewBox:o,collection:c,packageName:a});var u="business-suite-v1/sidepanel";export{t as a,n as b,l as c,o as d,u as e};

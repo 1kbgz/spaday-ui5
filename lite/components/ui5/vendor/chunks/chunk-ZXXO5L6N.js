@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-PV5GJCIG.js";import{b as t}from"./chunk-UUGHR7SZ.js";function i(){return t("div",{class:{"ui5-di-rect":this.placement===e.On,"ui5-di-needle":this.placement!==e.On}})}export{i as a};

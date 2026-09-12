@@ -1,0 +1,1 @@
+import{a}from"./chunk-YNUQGA77.js";import{a as t}from"./chunk-QC44HNUO.js";import{b as e}from"./chunk-QGIB35XP.js";var r=()=>{},g={getABAPDateFormat:r,getCustomIslamicCalendarData:e,getLanguageTag:()=>a().toString(),getCalendarType:t,getTrailingCurrencyCode:()=>!0,getCustomLocaleData:()=>({}),getCalendarWeekNumbering:()=>"Default"},i=g;export{i as a};

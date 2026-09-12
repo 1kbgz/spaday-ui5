@@ -1,0 +1,1 @@
+import{b as o}from"./chunk-7UODIHTC.js";var t="sap-logo-shape",c="M8.449 12.348H0V4h16l-7.551 8.348Z",n=!0,l=null,s="0 0 16 16",a="SAP-icons-v4",e="@ui5/webcomponents-icons";o(t,{pathData:c,ltr:n,viewBox:s,collection:a,packageName:e});var i="SAP-icons-v4/sap-logo-shape";export{c as a,n as b,l as c,s as d,i as e};

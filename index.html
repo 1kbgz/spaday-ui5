@@ -203,10 +203,12 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/spaday_ui5/index.html">spaday_ui5</a><input aria-label="Toggle navigation of spaday_ui5" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/spaday_ui5/components/index.html">spaday_ui5.components</a></li>
 <li class="toctree-l3"><a class="reference internal" href="autoapi/spaday_ui5/example/index.html">spaday_ui5.example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/spaday_ui5/gallery/index.html">spaday_ui5.gallery</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/integration/index.html">integration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/test_example/index.html">test_example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autoapi/test_gallery/index.html">test_gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="autoapi/test_versions/index.html">test_versions</a></li>
 </ul>
 </li>
@@ -257,7 +259,7 @@
 <a class="reference external" href="https://codecov.io/gh/1kbgz/spaday-ui5"><img alt="codecov" src="https://codecov.io/gh/1kbgz/spaday-ui5/branch/main/graph/badge.svg" /></a>
 <a class="reference external" href="https://github.com/1kbgz/spaday-ui5"><img alt="License" src="https://img.shields.io/github/license/1kbgz/spaday-ui5" /></a>
 <a class="reference external" href="https://pypi.python.org/pypi/spaday-ui5"><img alt="PyPI" src="https://img.shields.io/pypi/v/spaday-ui5.svg" /></a></p>
-<p><a class="reference download internal" download="" href="_downloads/511130ba57d06e171745555d4873b2f1/example.py"><span class="xref download myst"><img alt="Preview of UI5 components in spaday rendering a procurement cockpit" src="https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp" /></span></a></p>
+<p><a class="reference external" href="https://1kbgz.github.io/spaday-ui5/lite/"><img alt="Preview of UI5 components in spaday rendering a procurement cockpit" src="https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp" /></a></p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">spaday</span><span class="w"> </span><span class="kn">import</span> <span class="n">SetField</span><span class="p">,</span> <span class="n">element</span><span class="p">,</span> <span class="n">serve</span>
@@ -275,6 +277,13 @@ Elements Manifest, so props, events and slots are checked when you author the tr
 <code class="docutils literal notranslate"><span class="pre">design</span></code> carry their choices. Installing the package does not inject assets; select it with
 <code class="docutils literal notranslate"><span class="pre">packages=[&quot;ui5&quot;]</span></code> or pass the exported <code class="docutils literal notranslate"><span class="pre">package</span></code> descriptor.</p>
 </section>
+<section id="browser-examples">
+<h2>Browser examples<a class="headerlink" href="#browser-examples" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://1kbgz.github.io/spaday-ui5/lite/">Procurement cockpit</a> — complete interactive example, with Python running in Pyodide.</p></li>
+<li><p><a class="reference external" href="https://1kbgz.github.io/spaday-ui5/lite/?example=gallery">Component gallery</a> — all 125 generated UI5 wrappers and their Python source.</p></li>
+</ul>
+</section>
 <section id="run-the-local-example">
 <h2>Run the local example<a class="headerlink" href="#run-the-local-example" title="Link to this heading">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[examples]"</span>
@@ -287,6 +296,7 @@ approved or rejected through Python endpoints with a toast, a supplier table who
 a requisition form of input, select, step input, date picker, combo box, checkbox and text area two-way
 bound to spaday state and confirmed in a dialog, and a dark switch that moves UI5 and the spaday shell to
 <code class="docutils literal notranslate"><span class="pre">sap_horizon_dark</span></code> together.</p>
+<p>Run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">spaday_ui5.gallery</span></code> and open <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:8027</span></code> for the exhaustive local component gallery.</p>
 </section>
 <section id="theming">
 <h2>Theming<a class="headerlink" href="#theming" title="Link to this heading">¶</a></h2>

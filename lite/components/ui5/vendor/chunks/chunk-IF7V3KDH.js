@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-5KSBY4GO.js";import{b as t}from"./chunk-UUGHR7SZ.js";var r={listItemContent:i};function s(o){let n={...r,...o};return e.call(this,n)}function i(){return t("div",{class:"ui5-li-tree-text-wrapper",children:t("slot",{name:"content",slot:"content"})})}export{s as a};

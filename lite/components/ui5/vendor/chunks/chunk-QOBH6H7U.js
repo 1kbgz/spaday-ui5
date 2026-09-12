@@ -1,0 +1,1 @@
+import{b as s}from"./chunk-7UODIHTC.js";var t="1x2-grid-layout",o="M0 512V0h512v512H0zm272-32h208V32H272v448zm-240 0h208V32H32v448z",e=!1,u=null,n="0 0 512 512",c="business-suite-v1",a="@ui5/webcomponents-icons-business-suite";s(t,{pathData:o,ltr:e,viewBox:n,collection:c,packageName:a});var l="business-suite-v1/1x2-grid-layout";export{o as a,e as b,u as c,n as d,l as e};

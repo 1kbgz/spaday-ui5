@@ -1,0 +1,1 @@
+import{b as r}from"./chunk-34SEFO2J.js";function g(n,o,i,a,t={}){n.preventDefault();let e=r.getDraggedElement();if(!e&&t?.crossDnD)return;let l=t.originalEvent?{originalEvent:n}:{};o.fireDecoratorEvent("move",{...l,source:{element:e},destination:{element:i,placement:a}}),e?.focus()}var f=g;export{f as a};

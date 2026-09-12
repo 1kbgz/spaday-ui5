@@ -1,0 +1,1 @@
+var o=typeof document>"u",e={search(){return o?"":window.location.search}},i=()=>o?"":window.location.hostname,c=()=>o?"":window.location.port,a=()=>o?"":window.location.protocol,s=()=>o?"":window.location.href,u=()=>e.search(),w=(n,t,r)=>{o||window.open(n,t,r)},l=()=>{o||window.location.reload()};export{e as a,i as b,c,a as d,s as e,u as f,w as g,l as h};

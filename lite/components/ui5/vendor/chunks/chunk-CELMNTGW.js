@@ -1,0 +1,2 @@
+import{a as o}from"./chunk-U7PXAQZ2.js";import{a as t}from"./chunk-OZ446XW4.js";import{p as e}from"./chunk-BVD64EST.js";e("@ui5/webcomponents-theming","sap_horizon",async()=>o);e("@ui5/webcomponents","sap_horizon",async()=>t,"host");var r=`.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}:host(:not([hidden])){display:block;width:100%}.ui5-tree-root{height:100%;width:100%}
+`;export{r as a};

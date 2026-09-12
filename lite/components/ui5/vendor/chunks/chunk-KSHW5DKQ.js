@@ -1,0 +1,1 @@
+var r=null,l=Date.now(),s=300,u=g=>(D,f,t)=>{let o=t.value;return t.value=function(e){let n=!1;if(e.target instanceof HTMLElement){let a=e.target.closest(g);a===r&&Date.now()-l>=s?n=!0:a!==r&&(r=a,l=Date.now())}o.apply(this,[e,n])},t},c=u;export{c as a};

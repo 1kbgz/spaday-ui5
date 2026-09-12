@@ -1,0 +1,1 @@
+import{a as s}from"./chunk-CTWCJ4JV.js";import{a as e}from"./chunk-VDECNJCB.js";var a=o=>{let r=o.constructor,t=o.shadowRoot;if(!t){console.warn("There is no shadow root to update");return}t.adoptedStyleSheets=[e(),...s(r)],r.renderer(o,t)},c=a;export{c as a};

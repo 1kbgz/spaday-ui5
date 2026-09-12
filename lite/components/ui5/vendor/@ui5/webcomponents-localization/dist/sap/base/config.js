@@ -1,0 +1,1 @@
+import"../../../../../chunks/chunk-VC46IEJQ.js";var a=["sapUiLegacyTimeFormat","sapUiABAPTimeFormat","sapUiLegacyDateFormat","sapUiABAPDateFormat","sapUiLegacyNumberFormat","sapUiABAPNumberFormat"],t={getWritableInstance(){return{get({name:e}){if(!a.includes(e))throw new Error("Localization :: missing configuration requested.")}}},Type:{}};export{t as default};

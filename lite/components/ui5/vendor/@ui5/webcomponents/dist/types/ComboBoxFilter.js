@@ -1,0 +1,1 @@
+import"../../../../chunks/chunk-VC46IEJQ.js";var a;(function(t){t.StartsWithPerTerm="StartsWithPerTerm",t.StartsWith="StartsWith",t.Contains="Contains",t.None="None"})(a||(a={}));var n=a;export{n as default};

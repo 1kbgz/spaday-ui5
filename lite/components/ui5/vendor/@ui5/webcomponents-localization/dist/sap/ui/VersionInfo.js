@@ -1,0 +1,1 @@
+import"../../../../../chunks/chunk-VC46IEJQ.js";var e={load:function(){return Promise.resolve({})},_load:function(){return Promise.resolve({})},_getTransitiveDependencyForLibraries:function(){return[]},_getTransitiveDependencyForComponent:function(){}};export{e as default};

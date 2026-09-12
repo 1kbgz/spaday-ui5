@@ -1,0 +1,2 @@
+import{a as e}from"./chunk-U7PXAQZ2.js";import{a as r}from"./chunk-OZ446XW4.js";import{p as o}from"./chunk-BVD64EST.js";o("@ui5/webcomponents-theming","sap_horizon",async()=>e);o("@ui5/webcomponents","sap_horizon",async()=>r,"host");var a=`:host{min-width:15rem;color:var(--sapField_TextColor);background-color:var(--sapField_Background)}:host .ui5-date-picker-input{width:100%;min-width:inherit;color:inherit;background-color:inherit}
+`;export{a};

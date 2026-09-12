@@ -1,0 +1,1 @@
+import{b as s}from"./chunk-7UODIHTC.js";var o="polygon-black",t="M389.023 512l-258.976-77.395L8 242.109 246.14 0l254.015 130.977z",e=!1,i=null,n="0 0 512 512",c="business-suite-v1",a="@ui5/webcomponents-icons-business-suite";s(o,{pathData:t,ltr:e,viewBox:n,collection:c,packageName:a});var u="business-suite-v1/polygon-black";export{t as a,e as b,i as c,n as d,u as e};

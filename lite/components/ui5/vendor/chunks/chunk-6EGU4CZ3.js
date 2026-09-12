@@ -1,0 +1,1 @@
+import{m as r}from"./chunk-IHK2QQMY.js";import{a}from"./chunk-KIRTPI47.js";var e,t=class{static getLegacyDateCalendarCustomizing(){return e===void 0&&(e=r()),e.legacyDateCalendarCustomizing||[]}};a("LegacyDateFormats",t);var o=t;export{o as a};

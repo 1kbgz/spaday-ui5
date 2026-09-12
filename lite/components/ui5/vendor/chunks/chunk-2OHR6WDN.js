@@ -1,0 +1,1 @@
+var g=/('')|'([^']+(?:''[^']*)*)(?:'|$)|\{([0-9]+(?:\s*,[^{}]*)?)\}|[{}]/g,i=(n,t)=>(t=t||[],n.replace(g,(p,o,e,r,s)=>{if(o)return"'";if(e)return e.replace(/''/g,"'");if(r){let a=typeof r=="string"?parseInt(r):r;return String(t[a])}throw new Error(`[i18n]: pattern syntax error at pos ${s}`)})),f=i;export{f as a};

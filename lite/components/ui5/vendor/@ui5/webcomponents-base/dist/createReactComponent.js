@@ -1,0 +1,1 @@
+import"../../../chunks/chunk-VC46IEJQ.js";import{createElement as s}from"react";function d(i){let r=i.getMetadata().getTag();return function(c){let t={};return Object.entries(c).forEach(([e,n])=>{if(e.startsWith("on")&&typeof n=="function"){let f=n;t[e]=o=>{let a=o.nativeEvent?.detail;a!==void 0&&(o.detail=a),f(o)}}else t[e]=n}),s(r,t)}}export{d as default};

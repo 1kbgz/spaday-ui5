@@ -1,0 +1,1 @@
+import"../../../../../../chunks/chunk-VC46IEJQ.js";var t=function(){return Promise.reject(new Error("fetch not supported in UI5 Web Components"))};t.ContentTypes={text:"text/plain",json:"application/json"};var e=t;export{e as default};

@@ -1,0 +1,1 @@
+var n;(function(l){l.None="None",l.Single="Single",l.SingleStart="SingleStart",l.SingleEnd="SingleEnd",l.SingleAuto="SingleAuto",l.Multiple="Multiple",l.Delete="Delete"})(n||(n={}));var g=n;export{g as a};

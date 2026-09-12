@@ -1,0 +1,1 @@
+import{a}from"./chunk-4CHUV7R5.js";var r=t=>{if(!t||t.hasAttribute("data-sap-no-tab-ref")||a(t))return!1;let e=t.getAttribute("tabindex");if(e!=null)return parseInt(e)>=0;let n=t.nodeName.toLowerCase();return n==="a"||/^(input|select|textarea|button|object)$/.test(n)?!t.disabled:!1},i=r;export{i as a};

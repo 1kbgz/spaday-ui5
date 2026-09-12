@@ -1,0 +1,1 @@
+var p=n=>{let o=n.openEnd;n.openEnd=function(){return this._mAttributes?.popover&&delete this._mAttributes.popover,o.apply(this)}},t=n=>{"prototype"in n&&"openEnd"in n.prototype?p(n.prototype):"openEnd"in n&&p(n)},i=t;export{i as a};

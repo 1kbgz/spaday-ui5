@@ -1,0 +1,1 @@
+import{b as t,c as s}from"./chunk-UUGHR7SZ.js";function e(){return s("div",{id:this._id,class:"ui5-tab-root","data-ui5-stable":this.stableDomRef,children:[t("slot",{name:this._defaultSlotName}),this.tabs.map(a=>t("slot",{name:a._effectiveSlotName}))]})}export{e as a};

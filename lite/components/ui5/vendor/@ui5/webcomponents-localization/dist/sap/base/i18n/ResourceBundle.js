@@ -1,0 +1,1 @@
+import"../../../../../../chunks/chunk-VC46IEJQ.js";var e={getText:function(){return""},hasText:function(){return!1},getProperty:function(){return""}},r={create:function(){return Promise.resolve(e)},_getUrl:function(){return""}},t=r;export{t as default};

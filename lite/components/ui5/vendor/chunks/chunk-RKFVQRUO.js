@@ -1,0 +1,1 @@
+import{b as t}from"./chunk-7UODIHTC.js";var o="text",c="M2 1h12v1H9v13H7V2H2V1Z",n=!1,l=null,e="0 0 16 16",s="SAP-icons-v4",a="@ui5/webcomponents-icons";t(o,{pathData:c,ltr:n,viewBox:e,collection:s,packageName:a});var r="SAP-icons-v4/text";export{c as a,n as b,l as c,e as d,r as e};

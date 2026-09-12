@@ -12,6 +12,7 @@ Submodules
 
    /autoapi/spaday_ui5/components/index
    /autoapi/spaday_ui5/example/index
+   /autoapi/spaday_ui5/gallery/index
 
 
 Attributes

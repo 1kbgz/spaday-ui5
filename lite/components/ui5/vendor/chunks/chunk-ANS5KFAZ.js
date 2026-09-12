@@ -1,0 +1,1 @@
+import{b as i}from"./chunk-2IFHJLUK.js";import{a as n}from"./chunk-GSDHRBMT.js";import{c as t}from"./chunk-6WWAFKE6.js";import{H as r}from"./chunk-BVD64EST.js";var f=o=>{let e=i(r());return!o&&e?n(e):o?t(o):t("SAP-icons")},g=f;export{g as a};

@@ -1,0 +1,1 @@
+var s=o=>(p,e)=>{let t=p.constructor;Object.prototype.hasOwnProperty.call(t,"metadata")||(t.metadata={});let a=t.metadata;a.properties||(a.properties={});let r=a.properties;r[e]||(r[e]=o??{})},c=s;export{c as a};

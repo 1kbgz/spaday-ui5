@@ -1,0 +1,1 @@
+import{a as f}from"./chunk-2JBGZURT.js";import{h as l,i as d,k as s}from"./chunk-3DZIDKGQ.js";var a=new WeakMap,p=(e,r)=>{let o=a.get(e);o||(o=s(e),a.set(e,o));let h=e.render(),t=f(o.Provider,{value:e,children:h});e.__shouldHydrate?(e.shadowRoot?.querySelectorAll("style").forEach(m=>m.remove()),d(t,r),e.__shouldHydrate=!1):l(t,r)},y=p;export{y as a};

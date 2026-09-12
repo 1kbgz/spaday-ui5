@@ -1,0 +1,2 @@
+import{a as e}from"./chunk-U7PXAQZ2.js";import{a as o}from"./chunk-OZ446XW4.js";import{p as i}from"./chunk-BVD64EST.js";i("@ui5/webcomponents-theming","sap_horizon",async()=>e);i("@ui5/webcomponents","sap_horizon",async()=>o,"host");var _=`.ui5-li-icon{color:var(--sapList_TextColor);min-width:var(--_ui5_list_item_icon_size);min-height:var(--_ui5_list_item_icon_size);padding-inline-end:var(--_ui5_list_item_icon_padding-inline-end)}
+`;export{_ as a};

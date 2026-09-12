@@ -1,0 +1,1 @@
+import"../../../../../../chunks/chunk-VC46IEJQ.js";var r={_processResourceConfiguration:function(e){return e},_resolveUri:function(e){return e},_resolveUriRelativeTo:function(e){return e}};export{r as default};

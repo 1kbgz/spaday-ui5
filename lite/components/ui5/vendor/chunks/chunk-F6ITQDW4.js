@@ -1,0 +1,2 @@
+import{a as o}from"./chunk-U7PXAQZ2.js";import{a as t}from"./chunk-OZ446XW4.js";import{p as e}from"./chunk-BVD64EST.js";e("@ui5/webcomponents-theming","sap_horizon",async()=>o);e("@ui5/webcomponents","sap_horizon",async()=>t,"host");var r=`.ui5-combobox-busy{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:42;display:flex;justify-content:center;align-items:center;pointer-events:all;width:100%}.ui5-combobox-busy:not([active]){display:none}[ui5-responsive-popover] [ui5-input]{width:100%}
+`;export{r as a};

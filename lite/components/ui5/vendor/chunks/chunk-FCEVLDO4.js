@@ -1,0 +1,1 @@
+import{b as c}from"./chunk-7UODIHTC.js";var o="circle-task",t="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm0 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Z",a=!1,l=null,n="0 0 16 16",e="SAP-icons-v5",s="@ui5/webcomponents-icons";c(o,{pathData:t,ltr:a,viewBox:n,collection:e,packageName:s});var r="SAP-icons-v5/circle-task";export{t as a,a as b,l as c,n as d,r as e};

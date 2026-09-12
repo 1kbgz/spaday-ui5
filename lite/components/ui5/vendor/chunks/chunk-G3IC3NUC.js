@@ -1,0 +1,1 @@
+import{b as e}from"./chunk-UUGHR7SZ.js";function t(){return e("div",{class:"ui5-cp-item",tabindex:parseInt(this.forcedTabIndex),role:"button","aria-label":this.getLabelText,"aria-pressed":this.selected,title:this.getLabelText,onClick:this._onClick})}export{t as a};

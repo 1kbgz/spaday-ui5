@@ -1,0 +1,1 @@
+import"../../../../../../chunks/chunk-VC46IEJQ.js";var n={isAccessibilityEnabled:function(){return!0},getAnimationMode:function(){return"full"},setAnimationMode:function(){},attachChange:function(){},detachChange:function(){}};export{n as default};

@@ -1,0 +1,1 @@
+import{b as t}from"./chunk-7UODIHTC.js";var e="context-menu",s="M1 512L511 0v512H1z",n=!1,u=null,o="0 0 512 512",c="business-suite-v1",a="@ui5/webcomponents-icons-business-suite";t(e,{pathData:s,ltr:n,viewBox:o,collection:c,packageName:a});var l="business-suite-v1/context-menu";export{s as a,n as b,u as c,o as d,l as e};

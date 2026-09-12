@@ -1,0 +1,1 @@
+import{a}from"./chunk-RSCUWFFP.js";import{a as n}from"./chunk-J3QUYWNP.js";var g=()=>n("ConfigChange.eventProvider",new a),i=()=>n("ConfigChange.values",{}),s="configChange",o=new Set,h=(e,t)=>{i()[e]=t,o.add(e);try{g().fireEvent(s,{name:e,value:t})}finally{o.delete(e)}},C=(e,t)=>{g().attachEvent(s,r=>{r.name===e&&!o.has(e)&&t(r.value)})},v=e=>i()[e];export{h as a,C as b,v as c};

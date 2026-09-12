@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-UQDOJWKI.js";import{b as t}from"./chunk-UUGHR7SZ.js";function e(){return o.call(this,{listItemContent:i},{role:"option",title:this.tooltip})}function i(){return t("slot",{})}export{e as a};

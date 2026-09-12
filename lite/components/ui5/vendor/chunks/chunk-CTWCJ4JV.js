@@ -1,0 +1,1 @@
+import{a as c}from"./chunk-6GQXI2H5.js";import{a as n}from"./chunk-PFDPZ4IU.js";var e=new Map;n(t=>{e.delete(`${t}_normal`)});var l=t=>{let a=`${t.getMetadata().getTag()}_normal`;if(!e.has(a)){let r=c(t),o=new CSSStyleSheet;o.replaceSync(r),e.set(a,[o])}return e.get(a)},y=l;export{y as a};

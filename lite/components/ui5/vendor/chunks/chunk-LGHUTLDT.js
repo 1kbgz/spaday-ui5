@@ -1,0 +1,1 @@
+import{a}from"./chunk-ZRMRJXTY.js";import{b as t}from"./chunk-UUGHR7SZ.js";function p(e){let{className:r,text:s,maxCharacters:x,part:m}=e;return t(a,{part:m,class:r,text:s,maxCharacters:x})}export{p as a};

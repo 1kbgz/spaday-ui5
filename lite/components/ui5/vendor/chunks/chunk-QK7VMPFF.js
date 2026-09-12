@@ -1,0 +1,2 @@
+import{a as e}from"./chunk-U7PXAQZ2.js";import{a as o}from"./chunk-OZ446XW4.js";import{p as t}from"./chunk-BVD64EST.js";t("@ui5/webcomponents-theming","sap_horizon",async()=>e);t("@ui5/webcomponents","sap_horizon",async()=>o,"host");var a=`:host([disabled]:active){pointer-events:none}.ui5-tb-popover-item.ui5-tb-button::part(button){justify-content:start}.ui5-tb-popover-item.ui5-tb-button[icon-only]::part(button){padding:0 var(--_ui5_button_base_padding)}
+`;export{a};

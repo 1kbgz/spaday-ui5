@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-6YDZIMS2.js";import{a,b as t}from"./chunk-UUGHR7SZ.js";function i(){return t(a,{children:!this.invalid&&t(e,{name:this.icon,class:"ui5-avatar-badge-icon",title:this.effectiveTooltip,mode:"Image"})})}export{i as a};

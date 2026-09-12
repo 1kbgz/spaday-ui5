@@ -1,0 +1,2 @@
+import{a as e}from"./chunk-U7PXAQZ2.js";import{a as i}from"./chunk-OZ446XW4.js";import{p as t}from"./chunk-BVD64EST.js";t("@ui5/webcomponents-theming","sap_horizon",async()=>e);t("@ui5/webcomponents","sap_horizon",async()=>i,"host");var s=`:host([ui5-cb-item-custom]){height:auto;min-height:var(--_ui5_list_item_base_height)}:host([ui5-cb-item-custom]) .ui5-li-root{min-height:var(--_ui5_list_item_base_height)}:host([ui5-cb-item-custom]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
+`;export{s as a};

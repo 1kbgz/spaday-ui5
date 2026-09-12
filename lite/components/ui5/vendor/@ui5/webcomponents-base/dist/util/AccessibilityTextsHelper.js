@@ -1,0 +1,1 @@
+import{a,b,c,d,e,f,g}from"../../../../chunks/chunk-GB5ZW2UV.js";import"../../../../chunks/chunk-VC46IEJQ.js";export{e as deregisterUI5Element,g as getAllAccessibleDescriptionRefTexts,b as getAllAccessibleNameRefTexts,c as getAssociatedLabelForTexts,f as getEffectiveAriaDescriptionText,a as getEffectiveAriaLabelText,d as registerUI5Element};

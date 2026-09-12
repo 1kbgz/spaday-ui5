@@ -1,0 +1,1 @@
+var s;(function(n){n["SAP-icons"]="SAP-icons-v4",n.horizon="SAP-icons-v5",n["SAP-icons-TNT"]="tnt",n.BusinessSuiteInAppSymbols="business-suite"})(s||(s={}));var t=n=>s[n]?s[n]:n,r=s;export{t as a,r as b};

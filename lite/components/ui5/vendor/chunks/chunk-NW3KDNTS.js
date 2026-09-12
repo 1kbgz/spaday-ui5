@@ -1,0 +1,1 @@
+import{b as e,c as t}from"./chunk-UUGHR7SZ.js";function i(){return t("div",{class:"ui5-calendar-legend-item-root",tabindex:parseInt(this.forcedTabIndex),role:"listitem",children:[e("div",{class:"ui5-calendar-legend-item-box"}),e("div",{class:"ui5-calendar-legend-item-text",children:this.effectiveText})]})}export{i as a};

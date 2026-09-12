@@ -1,0 +1,170 @@
+spaday_ui5.gallery
+==================
+
+.. py:module:: spaday_ui5.gallery
+
+.. autoapi-nested-parse::
+
+   Gallery of every UI5 component wrapped by spaday-ui5.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   spaday_ui5.gallery.COMPONENT_NAMES
+   spaday_ui5.gallery.COMPONENT_SNIPPETS
+   spaday_ui5.gallery.actions
+   spaday_ui5.gallery.inputs
+   spaday_ui5.gallery.navigation
+   spaday_ui5.gallery.data_display
+   spaday_ui5.gallery.catalog_source
+   spaday_ui5.gallery.catalog
+   spaday_ui5.gallery.page
+   spaday_ui5.gallery.styles
+   spaday_ui5.gallery.app
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   spaday_ui5.gallery._snippet
+   spaday_ui5.gallery._offsets
+   spaday_ui5.gallery._code
+   spaday_ui5.gallery._demo
+
+
+Module Contents
+---------------
+
+.. py:data:: COMPONENT_NAMES
+   :value: ('Ui5Avatar', 'Ui5AvatarBadge', 'Ui5AvatarGroup', 'Ui5Bar', 'Ui5Breadcrumbs',...
+
+
+.. py:data:: COMPONENT_SNIPPETS
+   :type:  list[str]
+   :value: []
+
+
+.. py:function:: _snippet(names: str, body: str) -> str
+
+.. py:function:: _offsets(source: str) -> list[int]
+
+.. py:function:: _code(source: str)
+
+   Render dependency-free highlighted Python.
+
+
+.. py:function:: _demo(title: str, description: str, source: str, preview)
+
+.. py:data:: actions
+
+.. py:data:: inputs
+
+.. py:data:: navigation
+
+.. py:data:: data_display
+
+.. py:data:: catalog_source
+   :value: Multiline-String
+
+   .. raw:: html
+
+      <details><summary>Show Value</summary>
+
+   .. code-block:: python
+
+      """from spaday_ui5 import (
+      
+      )
+      
+      components = [
+      """
+
+   .. raw:: html
+
+      </details>
+
+
+
+.. py:data:: catalog
+
+.. py:data:: page
+
+.. py:data:: styles
+   :value: Multiline-String
+
+   .. raw:: html
+
+      <details><summary>Show Value</summary>
+
+   .. code-block:: python
+
+      """
+      <script type="module">import "@ui5/webcomponents-icons/dist/AllIcons.js";</script>
+      <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: var(--sapFontFamily); color: var(--sapTextColor);
+          background: radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--sapBrandColor) 12%, transparent), transparent 34rem),
+            var(--sapBackgroundColor); }
+        spa-nav { position: sticky; z-index: 20; top: 0; justify-content: space-between; border-bottom: 1px solid var(--spa-border);
+          background: color-mix(in srgb, var(--sapShellColor, var(--sapBaseColor)) 92%, transparent); backdrop-filter: blur(16px); }
+        .gallery-page { display: grid; gap: 1rem; width: min(100%, 78rem); margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+        .hero { padding: clamp(1.5rem, 5vw, 3.5rem); border-radius: 1.25rem; color: white;
+          background: linear-gradient(125deg, #063b62 0%, #075f8f 54%, #0b75b7 100%);
+          box-shadow: 0 1.5rem 3rem color-mix(in srgb, #063b62 20%, transparent); }
+        .eyebrow { display: block; margin-bottom: .75rem; font-size: .75rem; font-weight: 700; letter-spacing: .12em; opacity: .75; }
+        .hero h1 { max-width: 15ch; margin: 0; font: 700 clamp(2rem, 5vw, 3.5rem)/1.02 var(--sapFontHeaderFamily); letter-spacing: -.035em; }
+        .hero > p { max-width: 45rem; margin: 1rem 0 1.25rem; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.55; opacity: .88; }
+        .hero-facts, .preview-row { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; }
+        .hero-facts span { padding: .4rem .65rem; border: 1px solid #ffffff45; border-radius: 999px; background: #ffffff16; font-size: .8rem; font-weight: 700; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+        .gallery-card { min-width: 0; overflow: hidden; border: 1px solid var(--spa-border); border-radius: 1rem; background: var(--sapBaseColor);
+          box-shadow: 0 .6rem 1.6rem color-mix(in srgb, #001b2e 8%, transparent); }
+        .demo-heading { display: flex; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.2rem; border-bottom: 1px solid var(--spa-border); }
+        .demo-heading h2 { margin: 0; font-size: 1.05rem; }
+        .demo-heading p { margin: .35rem 0 0; color: var(--sapContent_LabelColor); font-size: .875rem; line-height: 1.45; }
+        .language-pill, .catalog-count { flex: none; align-self: start; padding: .28rem .55rem; border-radius: 999px; color: var(--sapInformativeTextColor);
+          background: var(--sapInformativeBackground); font-size: .72rem; font-weight: 700; }
+        .preview { min-height: 11rem; padding: 1.25rem; background: color-mix(in srgb, var(--sapBackgroundColor) 65%, var(--sapBaseColor)); }
+        .form-preview { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+        .form-preview > *, .switch-slider > * { min-width: 0; }
+        .switch-slider { display: flex; align-items: center; gap: 1rem; }
+        .switch-slider ui5-slider { flex: 1; }
+        .stack-preview { display: grid; gap: .75rem; }
+        .code-block { max-width: 100%; min-height: 8rem; max-height: 20rem; margin: 0; overflow: auto; padding: 1rem 1.2rem; color: #dbeafe;
+          background: #071a2a; font: .78rem/1.65 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre; }
+        .token-keyword { color: #7dd3fc; } .token-string { color: #a7f3d0; } .token-number { color: #fcd34d; }
+        .token-comment { color: #94a3b8; } .token-operator { color: #c4b5fd; }
+        .catalog-card { overflow: visible; }
+        .catalog-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; padding: 1.2rem; }
+        .catalog-item { min-width: 0; padding: .65rem .75rem; border: 1px solid var(--spa-border); border-radius: .6rem;
+          background: color-mix(in srgb, var(--sapBackgroundColor) 72%, var(--sapBaseColor)); }
+        .catalog-item code { display: block; overflow: hidden; color: var(--sapLinkColor); font-size: .74rem; text-overflow: ellipsis; white-space: nowrap; }
+        .catalog-probe { display: none; }
+        details { border-top: 1px solid var(--spa-border); }
+        summary { padding: 1rem 1.2rem; cursor: pointer; color: var(--sapLinkColor); font-weight: 700; }
+        @media (max-width: 760px) {
+          spa-nav { position: static; flex-wrap: wrap; gap: .75rem; }
+          .gallery-page { padding: .75rem .75rem 2rem; }
+          .hero { border-radius: 1rem; }
+          .gallery-grid, .form-preview { grid-template-columns: 1fr; }
+          .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+          .demo-heading { align-items: start; }
+        }
+        @media (max-width: 380px) { .catalog-grid { grid-template-columns: 1fr; } }
+      </style>
+      """
+
+   .. raw:: html
+
+      </details>
+
+
+
+.. py:data:: app
+

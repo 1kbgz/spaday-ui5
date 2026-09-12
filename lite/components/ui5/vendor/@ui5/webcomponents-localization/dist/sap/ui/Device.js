@@ -1,0 +1,1 @@
+import"../../../../../chunks/chunk-VC46IEJQ.js";var e={browser:{firefox:!1,webkit:!1,chrome:!1,name:"",version:-1},os:{windows:!1,macintosh:!1,linux:!1,android:!1,ios:!1},system:{desktop:!0,phone:!1,tablet:!1},support:{touch:!1},media:{},orientation:{},resize:{}};export{e as default};

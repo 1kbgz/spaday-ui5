@@ -1,0 +1,1 @@
+var o=t=>{let e=0;return(t.selectionStart||t.selectionStart===0)&&(e=t.selectionDirection==="backward"?t.selectionStart:t.selectionEnd),e},n=(t,e)=>{t.selectionStart?(t.focus(),t.setSelectionRange(e,e)):t.focus()};export{o as a,n as b};

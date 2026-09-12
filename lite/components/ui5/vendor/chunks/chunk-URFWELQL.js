@@ -1,0 +1,1 @@
+import{a as c}from"./chunk-M75BGYWK.js";import{b as n}from"./chunk-TGFESJWX.js";import{a as o}from"./chunk-YNUQGA77.js";var a=new Map,r=async g=>{let t=o(g),e=t.getLanguage();return a.has(e)||(await n(t.getLanguage(),t.getRegion(),t.getScript()),a.set(e,new c(t))),a.get(e)},f=r;export{f as a};

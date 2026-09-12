@@ -1,0 +1,1 @@
+var o=t=>{if(!(t instanceof HTMLElement))return"default";let e=t.getAttribute("slot");if(e){let n=e.match(/^(.+?)-\d+$/);return n?n[1]:e}return"default"},r=t=>t instanceof HTMLSlotElement?t.assignedNodes({flatten:!0}).filter(e=>e instanceof HTMLElement):[t],s=t=>t.reduce((e,n)=>e.concat(r(n)),[]);export{o as a,r as b,s as c};

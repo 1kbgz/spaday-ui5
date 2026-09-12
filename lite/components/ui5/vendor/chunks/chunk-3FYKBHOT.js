@@ -1,0 +1,1 @@
+import{b as o}from"./chunk-7UODIHTC.js";var t="horizontal-grip",n="M1 7h2v2H1V7Zm12 0h2v2h-2V7ZM9 7h2v2H9V7ZM5 7h2v2H5V7Z",c=!1,r=null,a="0 0 16 16",e="SAP-icons-v4",s="@ui5/webcomponents-icons";o(t,{pathData:n,ltr:c,viewBox:a,collection:e,packageName:s});var l="SAP-icons-v4/horizontal-grip";export{n as a,c as b,r as c,a as d,l as e};

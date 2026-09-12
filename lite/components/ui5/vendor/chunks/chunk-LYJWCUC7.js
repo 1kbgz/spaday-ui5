@@ -1,0 +1,2 @@
+import{a as t}from"./chunk-U7PXAQZ2.js";import{a as i}from"./chunk-OZ446XW4.js";import{p as e}from"./chunk-BVD64EST.js";e("@ui5/webcomponents-theming","sap_horizon",async()=>t);e("@ui5/webcomponents","sap_horizon",async()=>i,"host");var m=`.ui5-cp-dialog-content{display:flex;justify-content:center;align-items:center;margin:1rem 0}.ui5-cp-dialog-footer{width:100%;display:flex;justify-content:flex-end;margin:.1875rem 1rem}.ui5-cp-dialog-footer [ui5-button]:first-child{margin-right:1rem}
+`;export{m as a};

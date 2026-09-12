@@ -1,0 +1,1 @@
+import{b as t}from"./chunk-7UODIHTC.js";var o="gateway",n="M511.5 256l-256 254-254-254 254-255zm-256 199l200-199-200-200-199 200z",a=!1,r=null,c="0 0 512 512",e="tnt-v2",s="@ui5/webcomponents-icons-tnt";t(o,{pathData:n,ltr:a,viewBox:c,collection:e,packageName:s});var i="tnt-v2/gateway";export{n as a,a as b,r as c,c as d,i as e};
