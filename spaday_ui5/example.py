@@ -370,6 +370,21 @@ submitted = Ui5Dialog(
     ),
 )
 
+hero = element(
+    "section",
+    element("span", class_="eyebrow").text("UI5 OPERATIONS · PROCUREMENT"),
+    element("h1").text("Control spend without slowing teams"),
+    element("p", class_="hero-copy").text("Live approvals, supplier health and purchase requests share one typed Python workflow."),
+    element(
+        "div",
+        Ui5Tag(design="Positive").text("125 typed elements"),
+        Ui5Tag(design="Information").text("Live supplier feed"),
+        Ui5Tag(design="Set1").text("Python decisions"),
+        class_="hero-tags",
+    ),
+    class_="hero",
+)
+
 page = App(
     Nav(
         Ui5Title(level="H4").text("Procurement cockpit"),
@@ -382,6 +397,7 @@ page = App(
     ),
     Body(
         Main(
+            hero,
             Ui5MessageStrip(design="Information", hide_close_button=True).text(
                 "Budgets, approvals and supplier performance stream from Python; every control is a typed UI5 Web Component."
             ),
@@ -404,13 +420,24 @@ page = App(
 
 styles = """
 <style>
-  body { margin: 0; font-family: var(--sapFontFamily); background: var(--sapBackgroundColor); color: var(--sapTextColor); }
-  spa-nav { justify-content: space-between; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--sapFontFamily); color: var(--sapTextColor);
+    background: radial-gradient(circle at 12% 0%, color-mix(in srgb, var(--sapBrandColor) 13%, transparent), transparent 32rem),
+      var(--sapBackgroundColor); }
+  spa-nav { position: sticky; z-index: 20; top: 0; justify-content: space-between; border-bottom: 1px solid var(--spa-border);
+    background: var(--sapBaseColor); }
   .dark-toggle { display: inline-flex; align-items: center; gap: .5rem; }
   .page { box-sizing: border-box; width: 100%; max-width: 76rem; margin: 0 auto; padding: 1.5rem 1rem;
     display: grid; align-content: start; gap: 1rem; }
+  .hero { overflow: hidden; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid color-mix(in srgb, var(--sapBrandColor) 24%, var(--spa-border));
+    border-radius: 1.25rem; color: white; background: linear-gradient(125deg, #063b62 0%, #075f8f 54%, #0b75b7 100%);
+    box-shadow: 0 1.5rem 3rem color-mix(in srgb, #063b62 20%, transparent); }
+  .eyebrow { display: block; margin-bottom: .75rem; font-size: .75rem; font-weight: 700; letter-spacing: .12em; opacity: .76; }
+  .hero h1 { max-width: 15ch; margin: 0; font: 700 clamp(2rem, 5vw, 3.5rem)/1.02 var(--sapFontHeaderFamily); letter-spacing: -.035em; }
+  .hero-copy { max-width: 42rem; margin: 1rem 0 1.25rem; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.55; opacity: .88; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
   .kpis { flex-wrap: wrap; }
-  .kpis ui5-card { flex: 1 1 16rem; }
+  .kpis ui5-card { flex: 1 1 16rem; min-width: 0; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem color-mix(in srgb, #001b2e 8%, transparent); }
   .card-body { display: grid; gap: .5rem; padding: 0 1rem 1rem; }
   .caption { color: var(--sapContent_LabelColor); font-size: var(--sapFontSmallSize); }
   .figure { font-size: 2.25rem; font-family: var(--sapFontHeaderFamily); color: var(--sapTile_TitleTextColor, var(--sapTextColor)); }
@@ -423,11 +450,28 @@ styles = """
   .req-actions { display: flex; gap: .25rem; }
   .request { display: grid; gap: .5rem; }
   @media (max-width: 720px) {
+    spa-nav { position: static; flex-wrap: wrap; gap: .75rem; }
+    .page { padding: .75rem; }
+    .hero { border-radius: 1rem; }
     .req { grid-template-columns: auto 1fr; }
     .req-amount, .req ui5-tag, .req-actions { grid-column: 2; justify-self: start; }
+    .req-actions { flex-wrap: wrap; }
   }
 </style>
 """
+
+initial_store = {
+    "dark": False,
+    "title": "Ergonomic keyboards",
+    "cost_center": "CC-100",
+    "amount": 2_500,
+    "needed_by": (TODAY + timedelta(days=14)).isoformat(),
+    "supplier": "Acme Components",
+    "preferred": True,
+    "justification": "Replacing worn-out keyboards for the platform team.",
+    "created": {"body": {"message": ""}},
+    "decision": {"body": {"message": ""}},
+}
 
 app = serve(
     page,
@@ -439,18 +483,7 @@ app = serve(
         Route("/api/requisitions/{id}/{decision:str}", decide, methods=["POST"]),
     ],
     background=[transports.autosync(server), stream_procurement()],
-    store={
-        "dark": False,
-        "title": "Ergonomic keyboards",
-        "cost_center": "CC-100",
-        "amount": 2_500,
-        "needed_by": (TODAY + timedelta(days=14)).isoformat(),
-        "supplier": "Acme Components",
-        "preferred": True,
-        "justification": "Replacing worn-out keyboards for the platform team.",
-        "created": {"body": {"message": ""}},
-        "decision": {"body": {"message": ""}},
-    },
+    store=initial_store,
     head=styles,
     title="spaday-ui5 example",
 )

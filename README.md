@@ -7,7 +7,7 @@ Typed [UI5 Web Components](https://ui5.github.io/webcomponents/) and browser ass
 [![License](https://img.shields.io/github/license/1kbgz/spaday-ui5)](https://github.com/1kbgz/spaday-ui5)
 [![PyPI](https://img.shields.io/pypi/v/spaday-ui5.svg)](https://pypi.python.org/pypi/spaday-ui5)
 
-[![Preview of UI5 components in spaday rendering a procurement cockpit](https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp)](./spaday_ui5/example.py)
+[![Preview of UI5 components in spaday rendering a procurement cockpit](https://raw.githubusercontent.com/1kbgz/spaday-ui5/main/docs/img/preview.webp)](https://1kbgz.github.io/spaday-ui5/lite/)
 
 ## Overview
 
@@ -27,6 +27,11 @@ Elements Manifest, so props, events and slots are checked when you author the tr
 `design` carry their choices. Installing the package does not inject assets; select it with
 `packages=["ui5"]` or pass the exported `package` descriptor.
 
+## Browser examples
+
+- [Procurement cockpit](https://1kbgz.github.io/spaday-ui5/lite/) — complete interactive example, with Python running in Pyodide.
+- [Component gallery](https://1kbgz.github.io/spaday-ui5/lite/?example=gallery) — all 125 generated UI5 wrappers and their Python source.
+
 ## Run the local example
 
 ```bash
@@ -40,6 +45,8 @@ approved or rejected through Python endpoints with a toast, a supplier table who
 a requisition form of input, select, step input, date picker, combo box, checkbox and text area two-way
 bound to spaday state and confirmed in a dialog, and a dark switch that moves UI5 and the spaday shell to
 `sap_horizon_dark` together.
+
+Run `python -m spaday_ui5.gallery` and open `http://127.0.0.1:8027` for the exhaustive local component gallery.
 
 ## Theming
 
