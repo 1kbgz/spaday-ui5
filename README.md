@@ -27,6 +27,25 @@ Elements Manifest, so props, events and slots are checked when you author the tr
 `design` carry their choices. Installing the package does not inject assets; select it with
 `packages=["ui5"]` or pass the exported `package` descriptor.
 
+## Generic controls
+
+Selecting the `ui5` package also selects its design, rendering spaday's generic controls as UI5
+elements:
+
+```python
+from spaday import Button, Column, TextInput
+from spaday.backends.starlette import serve
+
+page = Column(
+    TextInput(label="Name").bind("value", "name", mode="two-way"),
+    Button(label="Save", intent="primary"),
+)
+app = serve(page, packages=["ui5"], design="ui5", store={"name": ""})
+```
+
+UI5 realizes 12 of the 13 generic controls. `RadioGroup` uses spaday's marked native fallback because
+UI5 exposes individual radio buttons but no group element that can own the shared value binding.
+
 ## Browser examples
 
 - [Procurement cockpit](https://1kbgz.github.io/spaday-ui5/lite/) — complete interactive example, with Python running in Pyodide.
