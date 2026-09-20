@@ -9,7 +9,12 @@ hidden: true
 
 ```
 
-# spaday-ui5
+<a href="https://github.com/1kbgz/spaday-ui5">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/1kbgz/spaday-ui5/raw/main/docs/img/logo-dark.webp?raw=true">
+    <img alt="spaday-ui5 logo, the UI5 feather and flame inside a browser window" src="https://github.com/1kbgz/spaday-ui5/raw/main/docs/img/logo-light.webp?raw=true" width="1200">
+  </picture>
+</a>
 
 Typed [UI5 Web Components](https://ui5.github.io/webcomponents/) and browser assets for [spaday](https://github.com/1kbgz/spaday).
 
