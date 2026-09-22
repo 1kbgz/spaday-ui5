@@ -1,0 +1,37 @@
+test_design
+===========
+
+.. py:module:: test_design
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   test_design._props
+   test_design._find
+   test_design.test_find_walks_all_slots_and_reports_missing_tags
+   test_design.test_the_package_publishes_its_design
+   test_design.test_fields_and_buttons_map_to_ui5
+   test_design.test_choices_switch_and_dialog_keep_ui5_state_contracts
+   test_design.test_the_conformance_page_only_falls_back_for_radio_group
+
+
+Module Contents
+---------------
+
+.. py:function:: _props(node: dict) -> dict
+
+.. py:function:: _find(node: dict, tag: str) -> dict
+
+.. py:function:: test_find_walks_all_slots_and_reports_missing_tags()
+
+.. py:function:: test_the_package_publishes_its_design()
+
+.. py:function:: test_fields_and_buttons_map_to_ui5()
+
+.. py:function:: test_choices_switch_and_dialog_keep_ui5_state_contracts()
+
+.. py:function:: test_the_conformance_page_only_falls_back_for_radio_group()
+

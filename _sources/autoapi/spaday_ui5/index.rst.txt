@@ -11,6 +11,7 @@ Submodules
    :maxdepth: 1
 
    /autoapi/spaday_ui5/components/index
+   /autoapi/spaday_ui5/design/index
    /autoapi/spaday_ui5/example/index
    /autoapi/spaday_ui5/gallery/index
 
@@ -20,6 +21,7 @@ Attributes
 
 .. autoapisummary::
 
+   spaday_ui5.DESIGN
    spaday_ui5.package
    spaday_ui5.TOKENS
 
@@ -2158,6 +2160,8 @@ Package Contents
 
    .. py:attribute:: schema
 
+
+.. py:data:: DESIGN
 
 .. py:data:: package
 

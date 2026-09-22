@@ -1,0 +1,24 @@
+spaday_ui5.design
+=================
+
+.. py:module:: spaday_ui5.design
+
+.. autoapi-nested-parse::
+
+   How UI5 renders spaday's generic controls (:mod:`spaday.ui`).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   spaday_ui5.design.DESIGN
+
+
+Module Contents
+---------------
+
+.. py:data:: DESIGN
+
