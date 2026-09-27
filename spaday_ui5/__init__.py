@@ -46,6 +46,7 @@ package = ComponentPackage(
 TOKENS = {
     "sapBaseColor": Token("--sapBaseColor", "drives --spa-surface"),
     "sapBackgroundColor": Token("--sapBackgroundColor", "drives --spa-surface-2"),
+    "sapTextColor": Token("--sapTextColor", "drives --spa-text"),
     "sapBrandColor": Token("--sapBrandColor", "drives --spa-accent"),
     "sapInformativeColor": Token("--sapInformativeColor", "drives --spa-info"),
     "sapPositiveColor": Token("--sapPositiveColor", "drives --spa-success"),

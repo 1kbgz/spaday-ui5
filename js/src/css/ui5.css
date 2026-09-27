@@ -9,6 +9,7 @@ spa-app {
   --spa-surface: var(--sapBaseColor);
   --spa-surface-2: var(--sapBackgroundColor);
   --spa-border: var(--sapList_BorderColor);
+  --spa-text: var(--sapTextColor);
   --spa-muted: var(--sapContent_LabelColor);
   --spa-accent: var(--sapBrandColor);
   --spa-info: var(--sapInformativeColor);

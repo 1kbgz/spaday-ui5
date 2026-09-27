@@ -49,6 +49,9 @@ def test_tokens_are_ui5_parameters_the_css_kwarg_produces():
         assert prop == f"--{kwarg}" and description.startswith("drives --spa-")
         assert element("div").css(**{kwarg: "x"}).to_node()["props"]["style"]["Str"] == f"{prop}: x"
 
+    css = (ROOT.parent / "js/src/css/ui5.css").read_text(encoding="utf-8")
+    assert "--spa-text: var(--sapTextColor);" in css
+
 
 def test_generated_catalog_is_current():
     fresh = generate(str(ROOT / "custom-elements.json"))
