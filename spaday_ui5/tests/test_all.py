@@ -1,7 +1,7 @@
 import ast
 from pathlib import Path
 
-from spaday import element, generate
+from spaday import Token, element, generate
 from spaday.bootstrap import bootstrap
 
 from spaday_ui5 import TOKENS, Ui5Button, Ui5Input, Ui5Tag, package
@@ -43,7 +43,9 @@ def test_published_imports_are_served():
 
 
 def test_tokens_are_ui5_parameters_the_css_kwarg_produces():
-    for kwarg, (prop, description) in TOKENS.items():
+    for kwarg, token in TOKENS.items():
+        assert isinstance(token, Token)
+        prop, description = token
         assert prop == f"--{kwarg}" and description.startswith("drives --spa-")
         assert element("div").css(**{kwarg: "x"}).to_node()["props"]["style"]["Str"] == f"{prop}: x"
 

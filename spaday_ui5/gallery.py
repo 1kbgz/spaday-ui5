@@ -403,7 +403,8 @@ catalog = element(
             "div",
             element("h2").text("Complete generated catalog"),
             element("p").text(
-                "Every wrapper in the UI5 Main package is rendered below, including interactive overlays and structural parent contexts."
+                "Every wrapper in the UI5 Main package is rendered below, including interactive overlays and structural parent contexts. "
+                "Repeated table rows need Each(..., direct=True) because UI5 requires rows directly under Ui5Table."
             ),
         ),
         element("span", class_="catalog-count").text(f"{len(COMPONENT_NAMES)} / {len(COMPONENT_NAMES)}"),
