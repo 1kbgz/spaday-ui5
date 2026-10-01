@@ -1,1 +1,0 @@
-import{a as i}from"./chunk-6CDSPPIF.js";import{a as o}from"./chunk-ZSO76G2F.js";import{b as t}from"./chunk-UUGHR7SZ.js";function n(){return t(i,{icon:this._icon,tooltip:this._tooltip,onClick:this._onClick,design:o.Transparent})}export{n as a};

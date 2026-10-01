@@ -1,0 +1,1 @@
+import{a as n,b as t,c as e}from"./chunk-TWCFJRD2.js";function s(){let o=this._sortIconComponent;return e(n,{children:[t("slot",{name:"action"}),t("slot",{}),o&&t(o,{name:this._sortIcon})]})}export{s as a};

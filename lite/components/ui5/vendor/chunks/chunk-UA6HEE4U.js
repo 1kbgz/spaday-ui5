@@ -1,1 +1,0 @@
-import{a as t}from"./chunk-TGFESJWX.js";var n=o=>{let r=o.match(/sap\/ui\/core\/cldr\/(\w+)\.json/);if(!r)throw new Error(`Unknown module "${o}"`);let e=r[1];return t(e)},c={loadResource:n},s=c;export{s as a};

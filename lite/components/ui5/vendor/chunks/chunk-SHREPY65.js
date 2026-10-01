@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-OUMJ7WFQ.js";import{b as t}from"./chunk-TWCFJRD2.js";var n={listItemContent:m};function r(o){let s={...n,...o};return e.call(this,s)}function m(){return t("slot",{})}export{r as a};

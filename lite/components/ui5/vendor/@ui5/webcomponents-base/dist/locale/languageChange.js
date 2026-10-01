@@ -1,1 +1,1 @@
-import{a,b,c}from"../../../../chunks/chunk-T7C2QGJ5.js";import"../../../../chunks/chunk-RSCUWFFP.js";import"../../../../chunks/chunk-VC46IEJQ.js";export{a as attachLanguageChange,b as detachLanguageChange,c as fireLanguageChange};
+import{a,b,c}from"../../../../chunks/chunk-SX4HH543.js";import"../../../../chunks/chunk-WH2ZNURH.js";import"../../../../chunks/chunk-VC46IEJQ.js";export{a as attachLanguageChange,b as detachLanguageChange,c as fireLanguageChange};

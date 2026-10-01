@@ -1,1 +1,0 @@
-import{a as c,b as a}from"./chunk-B4CRVMKK.js";var d=(o,f,s)=>{let r,l;return a({beforeStart:()=>{r=o.scrollLeft,l=o.scrollTop},duration:c(),element:o,advance:t=>{o.scrollLeft=r+t*f,o.scrollTop=l+t*s}})},p=d;export{p as a};

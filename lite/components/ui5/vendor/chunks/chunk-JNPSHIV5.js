@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-H4YGXJQF.js";import{b as t}from"./chunk-TWCFJRD2.js";function r(){return t(e,{id:this._id,class:"ui5-tc__separator",disabled:!0,style:this._forcedStyleInOverflow,ref:this.captureRef.bind(this)})}export{r as a};

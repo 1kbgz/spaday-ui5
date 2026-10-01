@@ -1,1 +1,0 @@
-import{a as e,b as t}from"./chunk-UUGHR7SZ.js";function r(){return t(e,{children:t("div",{class:"ui5-toast-root",role:"alert",tabindex:this._tabindex,children:t("bdi",{children:t("slot",{})})})})}export{r as a};

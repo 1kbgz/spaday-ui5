@@ -1,1 +1,0 @@
-import{a as t}from"./chunk-3DOZMHHT.js";import{a,b as e}from"./chunk-UUGHR7SZ.js";function i(){return e(a,{children:t.call(this,{ariaValueMax:this.valueMax,ariaValueMin:this.valueMin,ariaValueNow:this.valueNow,ariaValueText:this.valueText})})}export{i as a};

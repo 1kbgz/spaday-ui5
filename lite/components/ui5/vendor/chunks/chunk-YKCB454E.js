@@ -1,0 +1,1 @@
+import{a}from"./chunk-VBYTDZJJ.js";import{a as t}from"./chunk-DKVDMXKM.js";import{b as e}from"./chunk-TWCFJRD2.js";function o(){return e(a,{onSelectionChange:this.handleSelectionChange,children:e(t,{value:this.value&&this.getOption(this.value?.operator)?.format(this.value)})})}export{o as a};

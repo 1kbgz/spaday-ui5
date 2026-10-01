@@ -1,0 +1,2 @@
+import{a as i}from"./chunk-C6JJDDCN.js";import{a as t}from"./chunk-S2AAJXPT.js";import{p as e}from"./chunk-ODEOJA2J.js";e("@ui5/webcomponents-theming","sap_horizon",async()=>i);e("@ui5/webcomponents","sap_horizon",async()=>t,"host");var r=`:host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
+`;export{r as a};

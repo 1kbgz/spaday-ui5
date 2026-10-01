@@ -1,0 +1,2 @@
+import{a as r}from"./chunk-C6JJDDCN.js";import{a as o}from"./chunk-S2AAJXPT.js";import{p as e}from"./chunk-ODEOJA2J.js";e("@ui5/webcomponents-theming","sap_horizon",async()=>r);e("@ui5/webcomponents","sap_horizon",async()=>o,"host");var t=`.ui5-calendar-legend-root{column-width:7.5rem;gap:.5rem;padding:var(--_ui5-calendar-legend-root-padding);margin:1rem 0;width:var(--_ui5-calendar-legend-root-width);background-color:var(--sapList_Background)}
+`;export{t as a};

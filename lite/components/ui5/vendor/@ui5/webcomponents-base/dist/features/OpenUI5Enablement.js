@@ -1,4 +1,4 @@
-import{a as c}from"../../../../chunks/chunk-GQD4P3ZM.js";import{I as n}from"../../../../chunks/chunk-BF3SMVAV.js";import{a}from"../../../../chunks/chunk-W6XL5UBJ.js";import"../../../../chunks/chunk-QJWNGS4J.js";import"../../../../chunks/chunk-WTRMJ7GF.js";import{a as o}from"../../../../chunks/chunk-KIRTPI47.js";import"../../../../chunks/chunk-VC46IEJQ.js";var d={properties:{__isBusy:{type:Boolean}}},r=class s{static wrapTemplateResultInBusyMarkup(t,i,e){return i.isOpenUI5Component&&i.__isBusy&&(e=t`
+import{a as c}from"../../../../chunks/chunk-AS7JQS5B.js";import{I as n}from"../../../../chunks/chunk-M5OIUMCS.js";import{a}from"../../../../chunks/chunk-66PDZYJ5.js";import"../../../../chunks/chunk-RZOVLQ3T.js";import"../../../../chunks/chunk-ZXNNMVZJ.js";import{a as o}from"../../../../chunks/chunk-BMCFSSFF.js";import"../../../../chunks/chunk-VC46IEJQ.js";var d={properties:{__isBusy:{type:Boolean}}},r=class s{static wrapTemplateResultInBusyMarkup(t,i,e){return i.isOpenUI5Component&&i.__isBusy&&(e=t`
 			<div class="busy-indicator-wrapper">
 				<span tabindex="0" busy-indicator-before-span @focusin=${i.__suppressFocusIn}></span>
 				${e}

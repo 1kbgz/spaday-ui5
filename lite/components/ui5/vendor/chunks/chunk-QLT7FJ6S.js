@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-I3BH5GQB.js";import{a as t}from"./chunk-7XRJ6VAR.js";var i={iw:"he",ji:"yi"},n=e=>i[e]||e,g={getModernLanguage:n,getLanguageTag:()=>o().toString(),getTimezone:()=>t()||Intl.DateTimeFormat().resolvedOptions().timeZone,setTimezone:()=>{}},a=g;export{a};

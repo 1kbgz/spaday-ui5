@@ -1,0 +1,2 @@
+import{a as o}from"./chunk-C6JJDDCN.js";import{a as r}from"./chunk-S2AAJXPT.js";import{p as e}from"./chunk-ODEOJA2J.js";e("@ui5/webcomponents-theming","sap_horizon",async()=>o);e("@ui5/webcomponents","sap_horizon",async()=>r,"host");var m=`div.ui5-tc__separator{position:relative;width:.5625rem}div.ui5-tc__separator:before{content:" ";position:absolute;width:.0625rem;left:.25rem;top:.5rem;bottom:.5rem;background:var(--sapGroup_TitleBorderColor)}
+`;export{m as a};

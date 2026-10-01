@@ -1,0 +1,2 @@
+import{a as r}from"./chunk-C6JJDDCN.js";import{a as e}from"./chunk-S2AAJXPT.js";import{p as o}from"./chunk-ODEOJA2J.js";o("@ui5/webcomponents-theming","sap_horizon",async()=>r);o("@ui5/webcomponents","sap_horizon",async()=>e,"host");var s=`.ui5-tb-separator{height:var(--_ui5-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
+`;export{s as a};

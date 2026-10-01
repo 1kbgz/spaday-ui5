@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-5W7WPIFS.js";import{m as r}from"./chunk-RWP6S3XZ.js";import{a}from"./chunk-HAMBSLPL.js";import{b as e}from"./chunk-BMCFSSFF.js";var t;a(()=>{t=void 0});var f=()=>(t===void 0&&(t=r()),t.firstDayOfWeek),i=e("LegacyDateFormats"),c=i?o.getLegacyDateCalendarCustomizing:()=>[];export{f as a,c as b};

@@ -1,0 +1,2 @@
+import{a as t}from"./chunk-C6JJDDCN.js";import{a as e}from"./chunk-S2AAJXPT.js";import{p as o}from"./chunk-ODEOJA2J.js";o("@ui5/webcomponents-theming","sap_horizon",async()=>t);o("@ui5/webcomponents","sap_horizon",async()=>e,"host");var s=`:host{height:var(--_ui5_list_item_dropdown_base_height);--_ui5_list_item_title_size: var(--sapFontSize)}:host(:active[actionable]:not([data-moving])),:host(:active[actionable][selected]:not([data-moving])){background-color:var(--sapList_Active_Background);border-bottom-color:var(--sapList_Active_Background)}
+`;export{s as a};

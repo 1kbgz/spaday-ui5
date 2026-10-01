@@ -1,0 +1,1 @@
+var i=a=>(n,e)=>{n.metadata.i18n||(n.metadata.i18n={}),Object.defineProperty(n,e,{get(){return n.i18nBundles[a]},set(){}}),n.metadata.i18n[e]={bundleName:a,target:n},n.metadata.languageAware=!0},d=i;export{d as a};
