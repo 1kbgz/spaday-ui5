@@ -1,6 +1,7 @@
 import asyncio
 import logging
 from datetime import date, timedelta
+from typing import TypedDict
 
 import transports
 import uvicorn
@@ -54,7 +55,15 @@ BUDGET = 600_000
 TODAY = date(2026, 9, 14)
 COST_CENTERS = {"CC-100": "Engineering", "CC-200": "Operations", "CC-300": "Marketing"}
 DESIGN = {"Pending": "Information", "Approved": "Positive", "Rejected": "Negative"}
-SUPPLIERS = {
+
+
+class Supplier(TypedDict):
+    name: str
+    category: str
+    on_time: int
+
+
+SUPPLIERS: dict[str, Supplier] = {
     "acme": {"name": "Acme Components", "category": "Hardware", "on_time": 96},
     "globex": {"name": "Globex Logistics", "category": "Freight", "on_time": 88},
     "initech": {"name": "Initech Software", "category": "Licenses", "on_time": 99},
@@ -84,7 +93,7 @@ def requisition(number: int, title: str, requester: str, cost_center: str, amoun
     }
 
 
-def supplier_row(values: dict) -> dict:
+def supplier_row(values: Supplier) -> dict:
     on_time = values["on_time"]
     status = "Preferred" if on_time >= 95 else "Watch" if on_time < 85 else "Approved"
     return {

@@ -20,7 +20,9 @@ def test_catalog_covers_the_package():
     assert {"ui5-button", "ui5-input", "ui5-table", "ui5-date-picker"} <= tags
     assert len(tags) == 125
     # UI5 calls its default slot "default"; the catalog uses the "" every other package does
+    assert Ui5Button.schema is not None
     assert "" in Ui5Button.schema.slots and "default" not in Ui5Button.schema.slots
+    assert Ui5Tag.schema is not None
     design = next(prop for prop in Ui5Tag.schema.props if prop.name == "design")
     assert design.kind == "enum" and "Positive" in design.choices
 
