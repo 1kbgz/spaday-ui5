@@ -37,6 +37,7 @@ Classes
 
 .. autoapisummary::
 
+   spaday_ui5.example.Supplier
    spaday_ui5.example.ProcurementFeed
 
 
@@ -72,7 +73,38 @@ Module Contents
 
 .. py:data:: DESIGN
 
+.. py:class:: Supplier
+
+   Bases: :py:obj:`TypedDict`
+
+
+   dict() -> new empty dictionary
+   dict(mapping) -> new dictionary initialized from a mapping object's
+       (key, value) pairs
+   dict(iterable) -> new dictionary initialized as if via:
+       d = {}
+       for k, v in iterable:
+           d[k] = v
+   dict(**kwargs) -> new dictionary initialized with the name=value pairs
+       in the keyword argument list.  For example:  dict(one=1, two=2)
+
+   Initialize self.  See help(type(self)) for accurate signature.
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: category
+      :type:  str
+
+
+   .. py:attribute:: on_time
+      :type:  int
+
+
 .. py:data:: SUPPLIERS
+   :type:  dict[str, Supplier]
 
 .. py:data:: DRIFT
 
@@ -82,7 +114,7 @@ Module Contents
 
 .. py:function:: requisition(number: int, title: str, requester: str, cost_center: str, amount: float, status: str = 'Pending') -> dict
 
-.. py:function:: supplier_row(values: dict) -> dict
+.. py:function:: supplier_row(values: Supplier) -> dict
 
 .. py:class:: ProcurementFeed(/, **data: Any)
 
